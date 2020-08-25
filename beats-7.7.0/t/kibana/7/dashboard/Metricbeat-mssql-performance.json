@@ -1,0 +1,103 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\": \"metricbeat-*\", \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "User Connections [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{\"vis\": {\"legendOpen\": false}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"\", \"field\": \"mssql.performance.user_connections\"}, \"type\": \"avg\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"field\": \"@timestamp\", \"interval\": \"auto\", \"drop_partials\": false, \"useNormalizedEsInterval\": true, \"extended_bounds\": {}, \"min_doc_count\": 1, \"time_zone\": \"Europe/Madrid\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}], \"type\": \"line\", \"params\": {\"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"interpolate\": \"linear\", \"showCircles\": true, \"show\": \"true\", \"type\": \"line\", \"data\": {\"label\": \"Average mssql.performance.user_connections\", \"id\": \"1\"}, \"mode\": \"normal\", \"valueAxis\": \"ValueAxis-1\"}], \"grid\": {\"style\": {\"color\": \"#eee\"}, \"valueAxis\": \"ValueAxis-1\", \"categoryLines\": true}, \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"addTimeMarker\": false, \"addTooltip\": true, \"times\": [], \"addLegend\": true, \"type\": \"line\", \"legendPosition\": \"right\"}, \"title\": \"User Connections [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "7784db10-18ba-11e9-9836-f37dedd3b411-ecs",
+            "type": "visualization",
+            "updated_at": "2019-01-22T13:04:43.827Z",
+            "version": 8
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\": \"metricbeat-*\", \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Transactions [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{\"vis\": {\"legendOpen\": false}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"\", \"field\": \"mssql.performance.transactions\"}, \"type\": \"avg\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"field\": \"@timestamp\", \"interval\": \"auto\", \"drop_partials\": false, \"useNormalizedEsInterval\": true, \"extended_bounds\": {}, \"min_doc_count\": 1, \"time_zone\": \"Europe/Madrid\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}], \"type\": \"line\", \"params\": {\"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"interpolate\": \"linear\", \"showCircles\": true, \"show\": \"true\", \"type\": \"line\", \"data\": {\"label\": \"Average mssql.performance.transactions\", \"id\": \"1\"}, \"mode\": \"normal\", \"valueAxis\": \"ValueAxis-1\"}], \"grid\": {\"style\": {\"color\": \"#eee\"}, \"valueAxis\": \"ValueAxis-1\", \"categoryLines\": true}, \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"addTimeMarker\": false, \"addTooltip\": true, \"times\": [], \"addLegend\": true, \"type\": \"line\", \"legendPosition\": \"right\"}, \"title\": \"Transactions [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "910f3f30-18ba-11e9-9836-f37dedd3b411-ecs",
+            "type": "visualization",
+            "updated_at": "2019-01-22T13:04:34.757Z",
+            "version": 8
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\": \"metricbeat-*\", \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Lock Waits/sec [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{\"vis\": {\"legendOpen\": false}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"\", \"field\": \"mssql.performance.lock_waits_per_sec\"}, \"type\": \"avg\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"field\": \"@timestamp\", \"interval\": \"auto\", \"drop_partials\": false, \"useNormalizedEsInterval\": true, \"extended_bounds\": {}, \"min_doc_count\": 1, \"time_zone\": \"Europe/Madrid\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}], \"type\": \"line\", \"params\": {\"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"interpolate\": \"linear\", \"showCircles\": true, \"show\": \"true\", \"type\": \"line\", \"data\": {\"label\": \"Average mssql.performance.lock_waits_per_sec\", \"id\": \"1\"}, \"mode\": \"normal\", \"valueAxis\": \"ValueAxis-1\"}], \"grid\": {\"style\": {\"color\": \"#eee\"}, \"valueAxis\": \"ValueAxis-1\", \"categoryLines\": true}, \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"addTimeMarker\": false, \"addTooltip\": true, \"times\": [], \"addLegend\": true, \"type\": \"line\", \"legendPosition\": \"right\"}, \"title\": \"Lock Waits/sec [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "5bd5c230-18ba-11e9-9836-f37dedd3b411-ecs",
+            "type": "visualization",
+            "updated_at": "2019-01-22T13:04:24.139Z",
+            "version": 7
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\": \"metricbeat-*\", \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Batch Requests/sec [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"metricAgg\": \"custom\", \"customLabel\": \"\", \"customMetric\": {\"schema\": \"metricAgg\", \"enabled\": true, \"params\": {\"field\": \"mssql.performance.batch_requests_per_sec\"}, \"type\": \"avg\", \"id\": \"1-metric\"}}, \"type\": \"derivative\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"field\": \"@timestamp\", \"interval\": \"auto\", \"drop_partials\": false, \"useNormalizedEsInterval\": true, \"extended_bounds\": {}, \"min_doc_count\": 0, \"time_zone\": \"Europe/Madrid\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}], \"type\": \"line\", \"params\": {\"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"interpolate\": \"linear\", \"showCircles\": true, \"show\": \"true\", \"type\": \"line\", \"data\": {\"label\": \"Derivative of Average mssql.performance.batch_requests_per_sec\", \"id\": \"1\"}, \"mode\": \"normal\", \"valueAxis\": \"ValueAxis-1\"}], \"grid\": {\"style\": {\"color\": \"#eee\"}, \"valueAxis\": \"ValueAxis-1\", \"categoryLines\": true}, \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"addTimeMarker\": false, \"addTooltip\": true, \"times\": [], \"addLegend\": true, \"type\": \"line\", \"legendPosition\": \"right\"}, \"title\": \"Batch Requests/sec [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "b29a2160-18ba-11e9-9836-f37dedd3b411-ecs",
+            "type": "visualization",
+            "updated_at": "2019-01-22T13:03:10.853Z",
+            "version": 9
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\": \"metricbeat-*\", \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Buffer Cache Hit Ratio [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{\"vis\": {\"legendOpen\": false}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"percents\": [50], \"field\": \"mssql.performance.buffer.cache_hit.pct\"}, \"type\": \"median\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"field\": \"@timestamp\", \"interval\": \"auto\", \"drop_partials\": false, \"useNormalizedEsInterval\": true, \"extended_bounds\": {}, \"min_doc_count\": 0, \"time_zone\": \"Europe/Madrid\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}], \"type\": \"line\", \"params\": {\"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"interpolate\": \"linear\", \"showCircles\": true, \"show\": \"true\", \"type\": \"line\", \"data\": {\"label\": \"Median mssql.performance.buffer.cache_hit.pct\", \"id\": \"1\"}, \"mode\": \"normal\", \"valueAxis\": \"ValueAxis-1\"}], \"grid\": {\"style\": {\"color\": \"#eee\"}, \"valueAxis\": \"ValueAxis-1\", \"categoryLines\": true}, \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\", \"defaultYExtents\": false}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"addTimeMarker\": false, \"addTooltip\": true, \"times\": [], \"addLegend\": true, \"type\": \"line\", \"legendPosition\": \"right\"}, \"title\": \"Buffer Cache Hit Ratio [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "2e795230-1b2a-11e9-8b36-136038bb307a-ecs",
+            "type": "visualization",
+            "updated_at": "2019-01-22T13:04:16.184Z",
+            "version": 8
+        },
+        {
+            "attributes": {
+                "description": "A dashboard with key metrics about a MSSQL instance performance",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"darkTheme\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"title\": \"User Connections\", \"id\": \"7784db10-18ba-11e9-9836-f37dedd3b411-ecs\", \"panelIndex\": \"1\", \"gridData\": {\"h\": 15, \"i\": \"1\", \"y\": 0, \"x\": 0, \"w\": 16}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {\"vis\": {\"legendOpen\": false}}}, {\"title\": \"Transactions\", \"id\": \"910f3f30-18ba-11e9-9836-f37dedd3b411-ecs\", \"panelIndex\": \"2\", \"gridData\": {\"h\": 15, \"i\": \"2\", \"y\": 15, \"x\": 16, \"w\": 32}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {\"vis\": {\"legendOpen\": false}}}, {\"title\": \"Lock Waits/sec\", \"id\": \"5bd5c230-18ba-11e9-9836-f37dedd3b411-ecs\", \"panelIndex\": \"3\", \"gridData\": {\"h\": 15, \"i\": \"3\", \"y\": 0, \"x\": 32, \"w\": 16}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {\"vis\": {\"legendOpen\": false}}}, {\"title\": \"Batch Requests/sec\", \"id\": \"b29a2160-18ba-11e9-9836-f37dedd3b411-ecs\", \"panelIndex\": \"4\", \"gridData\": {\"h\": 15, \"i\": \"4\", \"y\": 0, \"x\": 16, \"w\": 16}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {\"vis\": {\"legendOpen\": false}}}, {\"title\": \"Buffer Cache Hit Ratio\", \"id\": \"2e795230-1b2a-11e9-8b36-136038bb307a-ecs\", \"panelIndex\": \"5\", \"gridData\": {\"h\": 15, \"i\": \"5\", \"y\": 15, \"x\": 0, \"w\": 16}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat MSSQL] Performance ECS",
+                "version": 1
+            },
+            "id": "a2ead240-18bb-11e9-9836-f37dedd3b411-ecs",
+            "type": "dashboard",
+            "updated_at": "2019-01-22T12:55:59.857Z",
+            "version": 11
+        }
+    ],
+    "version": "7.0.0-alpha2"
+}

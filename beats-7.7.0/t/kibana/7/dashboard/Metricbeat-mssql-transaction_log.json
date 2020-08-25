@@ -1,0 +1,175 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Recovery size of transaction log [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_position\": \"left\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"mssql.transaction_log.stats.recovery_size.bytes\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Recovery size of transaction log\", \"split_filters\": [{\"color\": \"#68BC00\", \"id\": \"de4cb6c0-1fb2-11e9-9c8a-cb3f85dff2a3\"}], \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"split_mode\": \"terms\", \"terms_field\": \"mssql.database.name\"}], \"index_pattern\": \"metricbeat-*\", \"axis_scale\": \"normal\", \"show_legend\": 1}, \"title\": \"Recovery size of transaction log [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "e9654a40-1fb2-11e9-8a4d-eb34d2834f6b-ecs",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "type": "visualization",
+            "updated_at": "2019-02-01T10:13:18.406Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Transaction log size since last checkpoint [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_position\": \"left\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"mssql.transaction_log.stats.since_last_checkpoint.bytes\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Transaction log size since last checkpoint\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"split_mode\": \"terms\", \"terms_field\": \"mssql.database.name\"}], \"index_pattern\": \"metricbeat-*\", \"axis_scale\": \"normal\", \"show_legend\": 1}, \"title\": \"Transaction log size since last checkpoint [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "1757d530-1fb3-11e9-8a4d-eb34d2834f6b-ecs",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "type": "visualization",
+            "updated_at": "2019-02-01T10:13:18.406Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Percentage of used space of transaction log [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_position\": \"left\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"mssql.transaction_log.space_usage.used.pct\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Percentage of used space of transaction log\", \"stacked\": \"percent\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"percent\", \"split_mode\": \"terms\", \"terms_field\": \"mssql.database.name\"}], \"index_pattern\": \"metricbeat-*\", \"axis_scale\": \"normal\", \"show_legend\": 1}, \"title\": \"Percentage of used space of transaction log [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "a55bb000-1fb2-11e9-8a4d-eb34d2834f6b-ecs",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "type": "visualization",
+            "updated_at": "2019-02-01T10:13:18.406Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Log space size since last backup [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_position\": \"left\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"mssql.transaction_log.space_usage.since_last_backup.bytes\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"mssql.database.name\"}], \"index_pattern\": \"metricbeat-*\", \"axis_scale\": \"normal\", \"show_legend\": 1}, \"title\": \"Log space size since last backup [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "edb7a0c0-1f2b-11e9-8a4d-eb34d2834f6b-ecs",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "type": "visualization",
+            "updated_at": "2019-02-01T10:13:18.406Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Active size of transaction log [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_position\": \"left\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"mssql.transaction_log.stats.active_size.bytes\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Active size of transaction log\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"split_mode\": \"terms\", \"terms_field\": \"mssql.database.name\"}], \"index_pattern\": \"metricbeat-*\", \"axis_scale\": \"normal\", \"show_legend\": 1}, \"title\": \"Active size of transaction log [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "c9ead180-1fb2-11e9-8a4d-eb34d2834f6b-ecs",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "type": "visualization",
+            "updated_at": "2019-02-01T10:13:18.406Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Used space of transaction log [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_position\": \"left\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"mssql.transaction_log.space_usage.used.bytes\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Used space of transaction log\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"split_mode\": \"terms\", \"terms_field\": \"mssql.database.name\"}], \"index_pattern\": \"metricbeat-*\", \"axis_scale\": \"normal\", \"show_legend\": 1}, \"title\": \"Used space of transaction log [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "68fa61b0-1fb2-11e9-8a4d-eb34d2834f6b-ecs",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "type": "visualization",
+            "updated_at": "2019-02-01T10:13:18.406Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Total log space usage [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"axis_position\": \"left\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"mssql.transaction_log.space_usage.total.bytes\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Total log space usage\", \"stacked\": \"stacked\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"split_mode\": \"terms\", \"terms_field\": \"mssql.database.name\"}], \"index_pattern\": \"metricbeat-*\", \"axis_scale\": \"normal\", \"show_legend\": 1}, \"title\": \"Total log space usage [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "6710ff20-1f2c-11e9-8a4d-eb34d2834f6b-ecs",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "type": "visualization",
+            "updated_at": "2019-02-01T10:13:18.406Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Database selector [Metricbeat MSSQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"input_control_vis\", \"params\": {\"updateFiltersOnChange\": false, \"pinFilters\": false, \"controls\": [{\"label\": \"\", \"indexPattern\": \"metricbeat-*\", \"fieldName\": \"mssql.database.name\", \"id\": \"1549016598264\", \"parent\": \"\", \"type\": \"list\", \"options\": {\"size\": 5, \"type\": \"terms\", \"multiselect\": true, \"dynamicOptions\": true, \"order\": \"desc\"}}], \"useTimeFilter\": false}, \"title\": \"Database selector [Metricbeat MSSQL] ECS\"}"
+            },
+            "id": "82bf9480-260b-11e9-a46a-471d2a76b305-ecs",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "type": "visualization",
+            "updated_at": "2019-02-01T10:24:09.159Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "An overview of the transaction log of each database in a MSSQL instance",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"darkTheme\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"title\": \"Recovery size of transaction log\", \"id\": \"e9654a40-1fb2-11e9-8a4d-eb34d2834f6b-ecs\", \"panelIndex\": \"1\", \"gridData\": {\"h\": 12, \"i\": \"1\", \"y\": 12, \"x\": 0, \"w\": 24}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {}}, {\"title\": \"Transaction log size since last checkpoint\", \"id\": \"1757d530-1fb3-11e9-8a4d-eb34d2834f6b-ecs\", \"panelIndex\": \"2\", \"gridData\": {\"h\": 13, \"i\": \"2\", \"y\": 24, \"x\": 24, \"w\": 24}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {}}, {\"title\": \"Percentage of used space of transaction log\", \"id\": \"a55bb000-1fb2-11e9-8a4d-eb34d2834f6b-ecs\", \"panelIndex\": \"3\", \"gridData\": {\"h\": 12, \"i\": \"3\", \"y\": 0, \"x\": 30, \"w\": 18}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {}}, {\"title\": \"Log space size since last backup\", \"id\": \"edb7a0c0-1f2b-11e9-8a4d-eb34d2834f6b-ecs\", \"panelIndex\": \"4\", \"gridData\": {\"h\": 13, \"i\": \"4\", \"y\": 37, \"x\": 0, \"w\": 24}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {}}, {\"title\": \"Active size of transaction log\", \"id\": \"c9ead180-1fb2-11e9-8a4d-eb34d2834f6b-ecs\", \"panelIndex\": \"5\", \"gridData\": {\"h\": 13, \"i\": \"5\", \"y\": 24, \"x\": 0, \"w\": 24}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {}}, {\"title\": \"Used space of transaction log\", \"id\": \"68fa61b0-1fb2-11e9-8a4d-eb34d2834f6b-ecs\", \"panelIndex\": \"6\", \"gridData\": {\"h\": 12, \"i\": \"6\", \"y\": 12, \"x\": 24, \"w\": 24}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {}}, {\"title\": \"Total log space usage\", \"id\": \"6710ff20-1f2c-11e9-8a4d-eb34d2834f6b-ecs\", \"panelIndex\": \"7\", \"gridData\": {\"h\": 12, \"i\": \"7\", \"y\": 0, \"x\": 12, \"w\": 18}, \"type\": \"visualization\", \"version\": \"7.0.0-alpha2\", \"embeddableConfig\": {}}, {\"panelIndex\": \"8\", \"id\": \"82bf9480-260b-11e9-a46a-471d2a76b305-ecs\", \"gridData\": {\"h\": 12, \"i\": \"8\", \"y\": 0, \"x\": 0, \"w\": 12}, \"type\": \"visualization\", \"version\": \"7.0.0-SNAPSHOT\", \"embeddableConfig\": {}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat MSSQL] Transaction log ECS",
+                "version": 1
+            },
+            "id": "18d66970-1fb4-11e9-8a4d-eb34d2834f6b-ecs",
+            "type": "dashboard",
+            "updated_at": "2019-02-01T10:39:36.585Z",
+            "version": 3
+        }
+    ],
+    "version": "7.0.0-SNAPSHOT"
+}

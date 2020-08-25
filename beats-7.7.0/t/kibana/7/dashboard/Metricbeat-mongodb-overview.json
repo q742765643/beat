@@ -1,0 +1,172 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "MongoDB-search-ecs",
+                "title": "Hosts [Metricbeat MongoDB] ECS",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Number of connections\", \"field\": \"mongodb.status.connections.current\"}, \"type\": \"avg\", \"id\": \"1\"}, {\"schema\": \"bucket\", \"enabled\": true, \"params\": {\"size\": 5, \"orderBy\": \"1\", \"field\": \"service.address\", \"order\": \"desc\"}, \"type\": \"terms\", \"id\": \"2\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Arch\", \"field\": \"mongodb.status.memory.bits\"}, \"type\": \"avg\", \"id\": \"3\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Resident memory\", \"field\": \"mongodb.status.memory.resident.mb\"}, \"type\": \"avg\", \"id\": \"4\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Virtual memory\", \"field\": \"mongodb.status.memory.virtual.mb\"}, \"type\": \"avg\", \"id\": \"5\"}], \"type\": \"table\", \"params\": {\"showMeticsAtAllLevels\": false, \"sort\": {\"direction\": null, \"columnIndex\": null}, \"showPartialRows\": false, \"perPage\": 10, \"showTotal\": false, \"totalFunc\": \"sum\"}, \"title\": \"Hosts [Metricbeat MongoDB] ECS\"}"
+            },
+            "id": "MongoDB-hosts-ecs",
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "MongoDB-search-ecs",
+                "title": "Engine & Version [Metricbeat MongoDB] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"field\": \"service.address\"}, \"type\": \"cardinality\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"size\": 5, \"customLabel\": \"Engine\", \"field\": \"mongodb.status.storage_engine.name\", \"orderBy\": \"1\", \"order\": \"desc\"}, \"type\": \"terms\", \"id\": \"2\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"size\": 5, \"customLabel\": \"Version\", \"field\": \"service.version\", \"orderBy\": \"1\", \"order\": \"desc\"}, \"type\": \"terms\", \"id\": \"3\"}], \"type\": \"pie\", \"params\": {\"shareYAxis\": true, \"legendPosition\": \"bottom\", \"addTooltip\": true, \"addLegend\": true, \"type\": \"pie\", \"isDonut\": true}, \"title\": \"Engine & Version [Metricbeat MongoDB] ECS\"}"
+            },
+            "id": "MongoDB-Engine-ampersand-Version-ecs",
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "MongoDB-search-ecs",
+                "title": "Operation counters [Metricbeat MongoDB] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"command\", \"field\": \"mongodb.status.ops.counters.command\"}, \"type\": \"avg\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"interval\": \"auto\", \"extended_bounds\": {}, \"min_doc_count\": 1, \"field\": \"@timestamp\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"delete\", \"field\": \"mongodb.status.ops.counters.delete\"}, \"type\": \"avg\", \"id\": \"3\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"getmore\", \"field\": \"mongodb.status.ops.counters.getmore\"}, \"type\": \"avg\", \"id\": \"4\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"insert\", \"field\": \"mongodb.status.ops.counters.insert\"}, \"type\": \"avg\", \"id\": \"5\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"query\", \"field\": \"mongodb.status.ops.counters.query\"}, \"type\": \"avg\", \"id\": \"6\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"update\", \"field\": \"mongodb.status.ops.replicated.update\"}, \"type\": \"avg\", \"id\": \"7\"}], \"type\": \"area\", \"params\": {\"setYExtents\": false, \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"interpolate\": \"linear\", \"showCircles\": true, \"show\": \"true\", \"type\": \"area\", \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"mode\": \"stacked\", \"valueAxis\": \"ValueAxis-1\"}], \"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"times\": [], \"legendPosition\": \"bottom\", \"scale\": \"linear\", \"smoothLines\": false, \"addTooltip\": true, \"shareYAxis\": true, \"grid\": {\"style\": {\"color\": \"#eee\"}, \"categoryLines\": false}, \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"Count\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"yAxis\": {}, \"addTimeMarker\": false, \"interpolate\": \"linear\", \"addLegend\": true, \"type\": \"area\", \"mode\": \"stacked\", \"defaultYExtents\": false}, \"title\": \"Operation counters [Metricbeat MongoDB] ECS\"}"
+            },
+            "id": "MongoDB-operation-counters-ecs",
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "MongoDB-search-ecs",
+                "title": "Concurrent transactions Read [Metricbeat MongoDB] ECS",
+                "uiStateJSON": "{\"vis\": {\"colors\": {\"Read Used\": \"#BF1B00\", \"Read Available\": \"#508642\"}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Read Available\", \"field\": \"mongodb.status.wired_tiger.concurrent_transactions.read.available\"}, \"type\": \"avg\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"interval\": \"auto\", \"extended_bounds\": {}, \"min_doc_count\": 1, \"field\": \"@timestamp\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Read Used\", \"field\": \"mongodb.status.wired_tiger.concurrent_transactions.read.out\"}, \"type\": \"avg\", \"id\": \"3\"}], \"type\": \"area\", \"params\": {\"setYExtents\": false, \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"interpolate\": \"linear\", \"showCircles\": true, \"show\": \"true\", \"type\": \"area\", \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"mode\": \"stacked\", \"valueAxis\": \"ValueAxis-1\"}], \"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"times\": [], \"legendPosition\": \"bottom\", \"scale\": \"linear\", \"smoothLines\": false, \"addTooltip\": true, \"shareYAxis\": true, \"grid\": {\"style\": {\"color\": \"#eee\"}, \"categoryLines\": false}, \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"Count\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"yAxis\": {}, \"addTimeMarker\": false, \"interpolate\": \"linear\", \"addLegend\": true, \"type\": \"area\", \"mode\": \"stacked\", \"defaultYExtents\": false}, \"title\": \"Concurrent transactions Read [Metricbeat MongoDB] ECS\"}"
+            },
+            "id": "MongoDB-Concurrent-transactions-Read-ecs",
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "MongoDB-search-ecs",
+                "title": "Concurrent transactions Write [Metricbeat MongoDB] ECS",
+                "uiStateJSON": "{\"vis\": {\"colors\": {\"Write Available\": \"#629E51\", \"Write Used\": \"#BF1B00\"}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Write Available\", \"field\": \"mongodb.status.wired_tiger.concurrent_transactions.write.available\"}, \"type\": \"avg\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"interval\": \"auto\", \"extended_bounds\": {}, \"min_doc_count\": 1, \"field\": \"@timestamp\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Write Used\", \"field\": \"mongodb.status.wired_tiger.concurrent_transactions.write.out\"}, \"type\": \"avg\", \"id\": \"3\"}], \"type\": \"area\", \"params\": {\"setYExtents\": false, \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"interpolate\": \"linear\", \"showCircles\": true, \"show\": \"true\", \"type\": \"area\", \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"mode\": \"stacked\", \"valueAxis\": \"ValueAxis-1\"}], \"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"times\": [], \"legendPosition\": \"bottom\", \"scale\": \"linear\", \"smoothLines\": false, \"addTooltip\": true, \"shareYAxis\": true, \"grid\": {\"style\": {\"color\": \"#eee\"}, \"categoryLines\": false}, \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"Count\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"yAxis\": {}, \"addTimeMarker\": false, \"interpolate\": \"linear\", \"addLegend\": true, \"type\": \"area\", \"mode\": \"stacked\", \"defaultYExtents\": false}, \"title\": \"Concurrent transactions Write [Metricbeat MongoDB] ECS\"}"
+            },
+            "id": "MongoDB-Concurrent-transactions-Write-ecs",
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "MongoDB-search-ecs",
+                "title": "Memory stats [Metricbeat MongoDB] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Mapped\", \"field\": \"mongodb.status.memory.mapped.mb\"}, \"type\": \"avg\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"interval\": \"auto\", \"extended_bounds\": {}, \"min_doc_count\": 1, \"field\": \"@timestamp\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Mapped with journal\", \"field\": \"mongodb.status.memory.mapped_with_journal.mb\"}, \"type\": \"avg\", \"id\": \"3\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Rezident\", \"field\": \"mongodb.status.memory.resident.mb\"}, \"type\": \"avg\", \"id\": \"4\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Virtual\", \"field\": \"mongodb.status.memory.virtual.mb\"}, \"type\": \"avg\", \"id\": \"5\"}], \"type\": \"line\", \"params\": {\"drawLinesBetweenPoints\": true, \"grid\": {\"style\": {\"color\": \"#eee\"}, \"categoryLines\": false}, \"setYExtents\": false, \"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"times\": [], \"legendPosition\": \"bottom\", \"scale\": \"log\", \"shareYAxis\": true, \"smoothLines\": false, \"radiusRatio\": 9, \"addTooltip\": true, \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"showCircles\": true, \"show\": \"true\", \"type\": \"line\", \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"mode\": \"normal\", \"valueAxis\": \"ValueAxis-1\"}], \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"Count\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"yAxis\": {}, \"addTimeMarker\": false, \"interpolate\": \"linear\", \"showCircles\": true, \"addLegend\": true, \"type\": \"line\", \"defaultYExtents\": false}, \"title\": \"Memory stats [Metricbeat MongoDB] ECS\"}"
+            },
+            "id": "MongoDB-memory-stats-ecs",
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "MongoDB-search-ecs",
+                "title": "Asserts [Metricbeat MongoDB] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"message\", \"field\": \"mongodb.status.asserts.msg\"}, \"type\": \"max\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"interval\": \"auto\", \"extended_bounds\": {}, \"min_doc_count\": 1, \"field\": \"@timestamp\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"regular\", \"field\": \"mongodb.status.asserts.regular\"}, \"type\": \"max\", \"id\": \"3\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"rollover\", \"field\": \"mongodb.status.asserts.rollovers\"}, \"type\": \"max\", \"id\": \"4\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"user\", \"field\": \"mongodb.status.asserts.user\"}, \"type\": \"max\", \"id\": \"5\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"warning\", \"field\": \"mongodb.status.asserts.warning\"}, \"type\": \"max\", \"id\": \"6\"}], \"type\": \"area\", \"params\": {\"setYExtents\": false, \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"interpolate\": \"linear\", \"showCircles\": true, \"show\": \"true\", \"type\": \"area\", \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"mode\": \"stacked\", \"valueAxis\": \"ValueAxis-1\"}], \"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"times\": [], \"legendPosition\": \"bottom\", \"scale\": \"linear\", \"smoothLines\": false, \"addTooltip\": true, \"shareYAxis\": true, \"grid\": {\"style\": {\"color\": \"#eee\"}, \"categoryLines\": false}, \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"Count\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"yAxis\": {}, \"addTimeMarker\": false, \"interpolate\": \"linear\", \"addLegend\": true, \"type\": \"area\", \"mode\": \"stacked\", \"defaultYExtents\": false}, \"title\": \"Asserts [Metricbeat MongoDB] ECS\"}"
+            },
+            "id": "MongoDB-asserts-ecs",
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                },
+                "savedSearchId": "MongoDB-search-ecs",
+                "title": "WiredTiger Cache [Metricbeat MongoDB] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"max\", \"field\": \"mongodb.status.wired_tiger.cache.maximum.bytes\"}, \"type\": \"avg\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"interval\": \"auto\", \"extended_bounds\": {}, \"min_doc_count\": 1, \"field\": \"@timestamp\", \"customInterval\": \"2h\"}, \"type\": \"date_histogram\", \"id\": \"2\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"used\", \"field\": \"mongodb.status.wired_tiger.cache.used.bytes\"}, \"type\": \"avg\", \"id\": \"3\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"dirty\", \"field\": \"mongodb.status.wired_tiger.cache.dirty.bytes\"}, \"type\": \"avg\", \"id\": \"4\"}], \"type\": \"area\", \"params\": {\"setYExtents\": false, \"seriesParams\": [{\"drawLinesBetweenPoints\": true, \"interpolate\": \"linear\", \"showCircles\": true, \"show\": \"true\", \"type\": \"area\", \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"mode\": \"stacked\", \"valueAxis\": \"ValueAxis-1\"}], \"categoryAxes\": [{\"position\": \"bottom\", \"style\": {}, \"title\": {}, \"id\": \"CategoryAxis-1\", \"type\": \"category\", \"show\": true, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"truncate\": 100, \"show\": true}}], \"times\": [], \"legendPosition\": \"bottom\", \"scale\": \"linear\", \"smoothLines\": false, \"addTooltip\": true, \"shareYAxis\": true, \"grid\": {\"style\": {\"color\": \"#eee\"}, \"categoryLines\": false}, \"valueAxes\": [{\"position\": \"left\", \"style\": {}, \"title\": {\"text\": \"Count\"}, \"id\": \"ValueAxis-1\", \"name\": \"LeftAxis-1\", \"type\": \"value\", \"show\": true, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"truncate\": 100, \"show\": true, \"rotate\": 0, \"filter\": false}}], \"yAxis\": {}, \"addTimeMarker\": false, \"interpolate\": \"linear\", \"addLegend\": true, \"type\": \"area\", \"mode\": \"overlap\", \"defaultYExtents\": false}, \"title\": \"WiredTiger Cache [Metricbeat MongoDB] ECS\"}"
+            },
+            "id": "MongoDB-WiredTiger-Cache-ecs",
+            "type": "visualization",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\": \"metricbeat-*\", \"highlight\": {\"require_field_match\": false, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"fragment_size\": 2147483647, \"pre_tags\": [\"@kibana-highlighted-field@\"], \"fields\": {\"*\": {}}}, \"query\": {\"language\": \"kuery\", \"query\": \"event.module:mongodb\"}, \"filter\": []}"
+                },
+                "sort": [
+                    "@timestamp",
+                    "desc"
+                ],
+                "title": "MongoDB search ECS",
+                "version": 1
+            },
+            "id": "MongoDB-search-ecs",
+            "type": "search",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "Overview of MongoDB server status",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"highlightAll\": true, \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"version\": true, \"filter\": []}"
+                },
+                "optionsJSON": "{\"darkTheme\": false}",
+                "panelsJSON": "[{\"size_x\": 8, \"size_y\": 3, \"panelIndex\": 1, \"id\": \"MongoDB-hosts-ecs\", \"row\": 1, \"type\": \"visualization\", \"col\": 1}, {\"size_x\": 4, \"size_y\": 3, \"panelIndex\": 4, \"id\": \"MongoDB-Engine-ampersand-Version-ecs\", \"row\": 1, \"type\": \"visualization\", \"col\": 9}, {\"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"id\": \"MongoDB-operation-counters-ecs\", \"row\": 4, \"type\": \"visualization\", \"col\": 1}, {\"size_x\": 3, \"size_y\": 3, \"panelIndex\": 6, \"id\": \"MongoDB-Concurrent-transactions-Read-ecs\", \"row\": 4, \"type\": \"visualization\", \"col\": 7}, {\"size_x\": 3, \"size_y\": 3, \"panelIndex\": 7, \"id\": \"MongoDB-Concurrent-transactions-Write-ecs\", \"row\": 4, \"type\": \"visualization\", \"col\": 10}, {\"size_x\": 12, \"size_y\": 4, \"panelIndex\": 5, \"id\": \"MongoDB-memory-stats-ecs\", \"row\": 10, \"type\": \"visualization\", \"col\": 1}, {\"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"id\": \"MongoDB-asserts-ecs\", \"row\": 7, \"type\": \"visualization\", \"col\": 7}, {\"size_x\": 6, \"size_y\": 3, \"panelIndex\": 8, \"id\": \"MongoDB-WiredTiger-Cache-ecs\", \"row\": 7, \"type\": \"visualization\", \"col\": 1}]",
+                "timeRestore": false,
+                "title": "[Metricbeat MongoDB] Overview ECS",
+                "uiStateJSON": "{\"P-1\": {\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}}",
+                "version": 1
+            },
+            "id": "Metricbeat-MongoDB-ecs",
+            "type": "dashboard",
+            "version": 3
+        }
+    ],
+    "version": "6.0.0-beta1-SNAPSHOT"
+}

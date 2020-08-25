@@ -1,0 +1,328 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Overview of MySQL server",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"highlightAll\": true, \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"version\": true, \"filter\": []}"
+                },
+                "optionsJSON": "{\"darkTheme\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"panelIndex\": \"14\", \"panelRefName\": \"panel_0\", \"gridData\": {\"h\": 15, \"i\": \"14\", \"y\": 38, \"x\": 24, \"w\": 24}, \"title\": \"Open Tables, Files, Streams\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Open Tables, Files, Streams\"}}, {\"panelIndex\": \"050b110b-0b4d-404a-86c0-fa97f7eed2a0\", \"panelRefName\": \"panel_1\", \"gridData\": {\"h\": 12, \"i\": \"050b110b-0b4d-404a-86c0-fa97f7eed2a0\", \"y\": 0, \"x\": 0, \"w\": 16}, \"title\": \"Rate of Questions\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Rate of Questions\"}}, {\"panelIndex\": \"988a61d7-ac3e-481e-a6ae-aa75aaa32a3a\", \"panelRefName\": \"panel_2\", \"gridData\": {\"h\": 12, \"i\": \"988a61d7-ac3e-481e-a6ae-aa75aaa32a3a\", \"y\": 0, \"x\": 16, \"w\": 16}, \"title\": \"Rate of SELECT statements\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Rate of SELECT statements\"}}, {\"panelIndex\": \"a1f8fa38-a62f-4e05-adde-e995dae9ad83\", \"panelRefName\": \"panel_3\", \"gridData\": {\"h\": 12, \"i\": \"a1f8fa38-a62f-4e05-adde-e995dae9ad83\", \"y\": 0, \"x\": 32, \"w\": 16}, \"title\": \"Rate of INSERT, UPDATE, DELETE\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Rate of INSERT, UPDATE, DELETE\"}}, {\"panelIndex\": \"d126fb61-605f-43af-b5d5-3fa3c128f726\", \"panelRefName\": \"panel_4\", \"gridData\": {\"h\": 12, \"i\": \"d126fb61-605f-43af-b5d5-3fa3c128f726\", \"y\": 12, \"x\": 0, \"w\": 6}, \"title\": \"Connected Threads\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Connected Threads\"}}, {\"panelIndex\": \"59586d96-3abd-48a3-a258-cfd620826ec2\", \"panelRefName\": \"panel_5\", \"gridData\": {\"h\": 12, \"i\": \"59586d96-3abd-48a3-a258-cfd620826ec2\", \"y\": 12, \"x\": 6, \"w\": 14}, \"title\": \"Connections\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Connections\"}}, {\"panelIndex\": \"dd0cf202-fe22-4daf-8f25-09c64d412bf3\", \"panelRefName\": \"panel_6\", \"gridData\": {\"h\": 12, \"i\": \"dd0cf202-fe22-4daf-8f25-09c64d412bf3\", \"y\": 12, \"x\": 20, \"w\": 14}, \"title\": \"Aborted Connections Rate\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Aborted Connections Rate\"}}, {\"panelIndex\": \"ead16a55-a2d3-49ae-a09b-a0b03560e9a0\", \"panelRefName\": \"panel_7\", \"gridData\": {\"h\": 12, \"i\": \"ead16a55-a2d3-49ae-a09b-a0b03560e9a0\", \"y\": 12, \"x\": 34, \"w\": 14}, \"title\": \"Thread Activity\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Thread Activity\"}}, {\"panelIndex\": \"24fc2926-610d-4910-8f3e-eb63ca69788c\", \"panelRefName\": \"panel_8\", \"gridData\": {\"h\": 14, \"i\": \"24fc2926-610d-4910-8f3e-eb63ca69788c\", \"y\": 24, \"x\": 0, \"w\": 15}, \"title\": \"Buffer Pool Pages\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Buffer Pool Pages\"}}, {\"panelIndex\": \"33c10c95-be67-492e-afb5-863f375cffc2\", \"panelRefName\": \"panel_9\", \"gridData\": {\"h\": 14, \"i\": \"33c10c95-be67-492e-afb5-863f375cffc2\", \"y\": 24, \"x\": 15, \"w\": 16}, \"title\": \"Buffer Pool Utilization\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Buffer Pool Utilization\"}}, {\"panelIndex\": \"3cd58868-0d03-4715-9ecc-9fba3cde47c1\", \"panelRefName\": \"panel_10\", \"gridData\": {\"h\": 15, \"i\": \"3cd58868-0d03-4715-9ecc-9fba3cde47c1\", \"y\": 38, \"x\": 0, \"w\": 24}, \"title\": \"Network Traffic\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Network Traffic\"}}, {\"panelIndex\": \"d35d7c5e-8832-40e2-8c77-953ad320c853\", \"panelRefName\": \"panel_11\", \"gridData\": {\"h\": 14, \"i\": \"d35d7c5e-8832-40e2-8c77-953ad320c853\", \"y\": 24, \"x\": 31, \"w\": 17}, \"title\": \"Buffer Pool Efficiency\", \"version\": \"7.3.1\", \"embeddableConfig\": {\"title\": \"Buffer Pool Efficiency\"}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat MySQL] Database Overview",
+                "version": 1
+            },
+            "id": "57b3fb50-6309-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "aaa326b0-f1f5-11e7-85ab-594b1652e0d1-ecs",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "4fa69a10-630b-11ea-a83e-25b8612d00cc",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "7ea77d30-630a-11ea-a83e-25b8612d00cc",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "779ee920-6309-11ea-a83e-25b8612d00cc",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "fc6b5a40-630d-11ea-a83e-25b8612d00cc",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "493e8460-630d-11ea-a83e-25b8612d00cc",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "bf60bc10-639b-11ea-a83e-25b8612d00cc",
+                    "name": "panel_6",
+                    "type": "visualization"
+                },
+                {
+                    "id": "822df290-630f-11ea-a83e-25b8612d00cc",
+                    "name": "panel_7",
+                    "type": "visualization"
+                },
+                {
+                    "id": "98c7bca0-63a2-11ea-a83e-25b8612d00cc",
+                    "name": "panel_8",
+                    "type": "visualization"
+                },
+                {
+                    "id": "96d46630-63a4-11ea-a83e-25b8612d00cc",
+                    "name": "panel_9",
+                    "type": "visualization"
+                },
+                {
+                    "id": "c8661020-6310-11ea-a83e-25b8612d00cc",
+                    "name": "panel_10",
+                    "type": "visualization"
+                },
+                {
+                    "id": "a1e00160-63a4-11ea-a83e-25b8612d00cc",
+                    "name": "panel_11",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2020-03-16T13:01:34.528Z",
+            "version": "WzQ2NzAsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Open tables, files, streams [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"mysql.status.open.tables\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": \"0\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0.3\", \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Open Tables\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(22,165,165,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"avg\", \"field\": \"mysql.status.open.files\", \"id\": \"615a2401-6312-11ea-99e6-b5eed31db613\"}], \"point_size\": \"0\", \"id\": \"615a2400-6312-11ea-99e6-b5eed31db613\", \"fill\": \"0.3\", \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Open Files\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(252,196,0,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"avg\", \"field\": \"mysql.status.open.streams\", \"id\": \"15d7bcd1-6313-11ea-99e6-b5eed31db613\"}], \"point_size\": \"0\", \"id\": \"15d7bcd0-6313-11ea-99e6-b5eed31db613\", \"fill\": \"0.3\", \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Open Streams\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(226,115,0,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\", \"legend_position\": \"bottom\"}, \"title\": \"Open tables, files, streams [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "aaa326b0-f1f5-11e7-85ab-594b1652e0d1-ecs",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T13:01:07.859Z",
+            "version": "WzQ2NjksMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Question rates [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"d61928d0-6309-11ea-99e6-b5eed31db613\"}], \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.questions\", \"id\": \"3c2a2a41-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"3c2a2a41-f1f4-11e7-a752-236fe3270d99\", \"id\": \"3c2a2a42-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"3c2a2a42-f1f4-11e7-a752-236fe3270d99\", \"id\": \"82f59710-6309-11ea-99e6-b5eed31db613\"}], \"point_size\": 1, \"id\": \"3c2a2a40-f1f4-11e7-a752-236fe3270d99\", \"fill\": \"0.3\", \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"SELECT\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(252,220,0,1)\", \"formatter\": \"'0.0a'\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 0, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\", \"legend_position\": \"right\"}, \"title\": \"Question rates [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "4fa69a10-630b-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T12:58:09.873Z",
+            "version": "WzQ2NTQsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "SELECT rates [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"d61928d0-6309-11ea-99e6-b5eed31db613\"}], \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.command.select\", \"id\": \"3c2a2a41-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"3c2a2a41-f1f4-11e7-a752-236fe3270d99\", \"id\": \"3c2a2a42-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"3c2a2a42-f1f4-11e7-a752-236fe3270d99\", \"id\": \"82f59710-6309-11ea-99e6-b5eed31db613\"}], \"point_size\": 1, \"id\": \"3c2a2a40-f1f4-11e7-a752-236fe3270d99\", \"fill\": \"0.3\", \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"SELECT\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"'0.0a'\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 0, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\", \"legend_position\": \"right\"}, \"title\": \"SELECT rates [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "7ea77d30-630a-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T12:59:11.517Z",
+            "version": "WzQ2NTUsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Insert, Update, Delete rates [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"d61928d0-6309-11ea-99e6-b5eed31db613\"}], \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.command.insert\", \"id\": \"3c2a2a41-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"3c2a2a41-f1f4-11e7-a752-236fe3270d99\", \"id\": \"3c2a2a42-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"3c2a2a42-f1f4-11e7-a752-236fe3270d99\", \"id\": \"82f59710-6309-11ea-99e6-b5eed31db613\"}], \"point_size\": 1, \"id\": \"3c2a2a40-f1f4-11e7-a752-236fe3270d99\", \"fill\": \"0.3\", \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"INSERT\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(104,204,202,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.command.update\", \"id\": \"485ce051-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"485ce051-f1f4-11e7-a752-236fe3270d99\", \"id\": \"485ce052-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"485ce052-f1f4-11e7-a752-236fe3270d99\", \"id\": \"a4092660-6309-11ea-99e6-b5eed31db613\"}], \"point_size\": 1, \"id\": \"485ce050-f1f4-11e7-a752-236fe3270d99\", \"fill\": \"0.3\", \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"UPDATE\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(252,220,0,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.command.delete\", \"id\": \"543a4a71-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"543a4a71-f1f4-11e7-a752-236fe3270d99\", \"id\": \"543a4a72-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"543a4a72-f1f4-11e7-a752-236fe3270d99\", \"id\": \"bae29b50-6309-11ea-99e6-b5eed31db613\"}], \"point_size\": 1, \"id\": \"543a4a70-f1f4-11e7-a752-236fe3270d99\", \"fill\": \"0.3\", \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"DELETE\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(244,78,59,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\", \"legend_position\": \"bottom\"}, \"title\": \"Insert, Update, Delete rates [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "779ee920-6309-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T12:59:32.603Z",
+            "version": "WzQ2NTYsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Connected Threads [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"d5fcf170-630d-11ea-99e6-b5eed31db613\"}], \"type\": \"gauge\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.threads.connected\", \"id\": \"fe9af661-630b-11ea-99e6-b5eed31db613\"}], \"point_size\": \"0\", \"id\": \"fe9af660-630b-11ea-99e6-b5eed31db613\", \"fill\": \"0.3\", \"separate_axis\": 0, \"line_width\": \"2\", \"chart_type\": \"line\", \"label\": \"Connections\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(115,216,255,0.89)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_position\": \"left\", \"axis_scale\": \"normal\", \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"gauge_color_rules\": [{\"id\": \"f1321f60-630d-11ea-99e6-b5eed31db613\"}], \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"gauge_inner_width\": 10, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\", \"legend_position\": \"bottom\"}, \"title\": \"Connected Threads [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "fc6b5a40-630d-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T12:59:47.044Z",
+            "version": "WzQ2NTcsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Connections [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.connections\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"caee3e70-630c-11ea-99e6-b5eed31db613\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"caee3e70-630c-11ea-99e6-b5eed31db613\", \"id\": \"d4eb4fd0-630c-11ea-99e6-b5eed31db613\"}], \"point_size\": \"0\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0.2\", \"seperate_axis\": 0, \"line_width\": \"2\", \"chart_type\": \"line\", \"label\": \"Connection rate\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(198,135,31,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.threads.connected\", \"id\": \"fe9af661-630b-11ea-99e6-b5eed31db613\"}], \"point_size\": \"0\", \"id\": \"fe9af660-630b-11ea-99e6-b5eed31db613\", \"fill\": \"0.3\", \"separate_axis\": 0, \"line_width\": \"2\", \"chart_type\": \"line\", \"label\": \"Connected\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(115,216,255,0.89)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"avg\", \"field\": \"mysql.status.max_used_connections\", \"id\": \"e3d46bf1-630f-11ea-99e6-b5eed31db613\"}], \"point_size\": \"0\", \"id\": \"e3d46bf0-630f-11ea-99e6-b5eed31db613\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Max Used Connections\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\", \"legend_position\": \"bottom\"}, \"title\": \"Connections [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "493e8460-630d-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T13:00:08.292Z",
+            "version": "WzQ2NTgsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Aborted Connections Rate [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"d61928d0-6309-11ea-99e6-b5eed31db613\"}], \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.aborted.clients\", \"id\": \"3c2a2a41-f1f4-11e7-a752-236fe3270d99\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"3c2a2a41-f1f4-11e7-a752-236fe3270d99\", \"id\": \"6d053540-639b-11ea-83d6-4f7a6fe5aed4\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"6d053540-639b-11ea-83d6-4f7a6fe5aed4\", \"id\": \"7548afc0-639b-11ea-83d6-4f7a6fe5aed4\"}], \"point_size\": 1, \"id\": \"3c2a2a40-f1f4-11e7-a752-236fe3270d99\", \"fill\": \"0.3\", \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Aborted Connections\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(176,188,0,1)\", \"formatter\": \"'0.0a'\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.aborted.connects\", \"id\": \"d6572ee1-639b-11ea-83d6-4f7a6fe5aed4\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"d6572ee1-639b-11ea-83d6-4f7a6fe5aed4\", \"id\": \"e4a63540-639b-11ea-83d6-4f7a6fe5aed4\"}, {\"type\": \"positive_only\", \"id\": \"ec492a00-639b-11ea-83d6-4f7a6fe5aed4\"}], \"point_size\": 1, \"id\": \"d6572ee0-639b-11ea-83d6-4f7a6fe5aed4\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Failed Attempts to Connect \", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(251,158,0,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\", \"legend_position\": \"bottom\"}, \"title\": \"Aborted Connections Rate [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "bf60bc10-639b-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T13:00:17.572Z",
+            "version": "WzQ2NTksMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Thread Activity [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"mysql.status.threads.running\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": \"0\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Avg Threads Running\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(226,115,0,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.threads.running\", \"id\": \"895f0821-630e-11ea-99e6-b5eed31db613\"}], \"point_size\": \"0\", \"id\": \"895f0820-630e-11ea-99e6-b5eed31db613\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": \"2\", \"stacked\": \"none\", \"chart_type\": \"line\", \"label\": \"Peak Threads Running\", \"split_color_mode\": \"gradient\", \"axis_position\": \"right\", \"color\": \"rgba(22,165,165,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.threads.connected\", \"id\": \"f8752461-630e-11ea-99e6-b5eed31db613\"}], \"point_size\": \"0\", \"id\": \"f8752460-630e-11ea-99e6-b5eed31db613\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": \"2\", \"chart_type\": \"line\", \"label\": \"Peak Threads Connected\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(77,77,77,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\", \"legend_position\": \"bottom\"}, \"title\": \"Thread Activity [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "822df290-630f-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T13:00:25.480Z",
+            "version": "WzQ2NjAsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Buffer Pool Pages [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"515b9dd0-639f-11ea-96d8-1943b9bb65d9\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"mysql.status.innodb.buffer_pool.pages.data\", \"id\": \"37f2d601-63a0-11ea-90a2-c51229c5db5f\"}], \"point_size\": 1, \"id\": \"37f2d600-63a0-11ea-90a2-c51229c5db5f\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Buffer Pool Pages Data\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"'0.0a'\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"avg\", \"field\": \"mysql.status.innodb.buffer_pool.pages.free\", \"id\": \"57ae9d81-63a0-11ea-90a2-c51229c5db5f\"}], \"point_size\": 1, \"id\": \"57ae9d80-63a0-11ea-90a2-c51229c5db5f\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": \"2\", \"chart_type\": \"line\", \"label\": \"Buffer Pool Pages Free\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(22,165,165,1)\", \"formatter\": \"'0.0a'\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"avg\", \"field\": \"mysql.status.innodb.buffer_pool.pages.total\", \"id\": \"c86ceb80-63a0-11ea-90a2-c51229c5db5f\"}], \"point_size\": 1, \"id\": \"c86cc470-63a0-11ea-90a2-c51229c5db5f\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": \"2\", \"chart_type\": \"line\", \"label\": \"Buffer Pool Pages Total\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(102,102,102,1)\", \"formatter\": \"'0.0a'\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\", \"axis_min\": 0, \"legend_position\": \"bottom\"}, \"title\": \"Buffer Pool Pages [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "98c7bca0-63a2-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T13:00:34.413Z",
+            "version": "WzQ2NjQsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Buffer Pool Utilization [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"bar_color_rules\": [{\"id\": \"0e1ecca0-63a3-11ea-90a2-c51229c5db5f\"}], \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"0f20fa60-63a3-11ea-90a2-c51229c5db5f\"}], \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.innodb.buffer_pool.pages.total\", \"id\": \"256f1f41-63a3-11ea-90a2-c51229c5db5f\"}, {\"type\": \"max\", \"field\": \"mysql.status.innodb.buffer_pool.pages.free\", \"id\": \"256f1f43-63a3-11ea-90a2-c51229c5db5f\"}, {\"script\": \"params.total != null && params.total > 0 ? (params.total - params.free)/params.total : null\", \"type\": \"calculation\", \"variables\": [{\"field\": \"256f1f41-63a3-11ea-90a2-c51229c5db5f\", \"id\": \"256f1f42-63a3-11ea-90a2-c51229c5db5f\", \"name\": \"total\"}, {\"field\": \"256f1f43-63a3-11ea-90a2-c51229c5db5f\", \"id\": \"256f1f44-63a3-11ea-90a2-c51229c5db5f\", \"name\": \"free\"}], \"id\": \"256f1f45-63a3-11ea-90a2-c51229c5db5f\"}], \"point_size\": \"2\", \"id\": \"256f1f40-63a3-11ea-90a2-c51229c5db5f\", \"fill\": \"0.1\", \"separate_axis\": 0, \"line_width\": \"2\", \"chart_type\": \"line\", \"label\": \"Utilization\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(226,115,0,1)\", \"formatter\": \"percent\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_position\": \"left\", \"axis_scale\": \"normal\", \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"gauge_color_rules\": [{\"id\": \"07c08ce0-63a3-11ea-90a2-c51229c5db5f\"}], \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"gauge_inner_width\": 10, \"type\": \"timeseries\", \"axis_min\": 0, \"legend_position\": \"bottom\", \"isModelInvalid\": false, \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"gauge_width\": 10, \"id\": \"515b9dd0-639f-11ea-96d8-1943b9bb65d9\", \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\"}, \"title\": \"Buffer Pool Utilization [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "96d46630-63a4-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T13:00:42.999Z",
+            "version": "WzQ2NjUsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Network Traffic [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.bytes.received\", \"id\": \"2b1c2391-f1f7-11e7-a752-236fe3270d99\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"2b1c2391-f1f7-11e7-a752-236fe3270d99\", \"id\": \"2b1c2392-f1f7-11e7-a752-236fe3270d99\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"2b1c2392-f1f7-11e7-a752-236fe3270d99\", \"id\": \"788d3c90-6310-11ea-99e6-b5eed31db613\"}, {\"script\": \"params.received != null && params.received > 0 ? params.received * -1 : null\", \"type\": \"calculation\", \"variables\": [{\"field\": \"788d3c90-6310-11ea-99e6-b5eed31db613\", \"id\": \"8beb4660-6310-11ea-99e6-b5eed31db613\", \"name\": \"received\"}], \"id\": \"88f8e160-6310-11ea-99e6-b5eed31db613\"}], \"point_size\": \"0\", \"id\": \"2b1c2390-f1f7-11e7-a752-236fe3270d99\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Received bytes\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(0,98,177,1)\", \"formatter\": \"bytes\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.bytes.sent\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"23cfda50-f1f7-11e7-a752-236fe3270d99\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"23cfda50-f1f7-11e7-a752-236fe3270d99\", \"id\": \"ad26a900-6310-11ea-99e6-b5eed31db613\"}], \"point_size\": \"0\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Sent bytes\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\", \"legend_position\": \"bottom\"}, \"title\": \"Network Traffic [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "c8661020-6310-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T13:00:59.606Z",
+            "version": "WzQ2NjcsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Buffer Pool Efficiency [Metricbeat MySQL] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"bar_color_rules\": [{\"id\": \"0e1ecca0-63a3-11ea-90a2-c51229c5db5f\"}], \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"0f20fa60-63a3-11ea-90a2-c51229c5db5f\"}], \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"mysql.status.innodb.buffer_pool.pool.reads\", \"id\": \"a397d571-63a2-11ea-90a2-c51229c5db5f\"}, {\"type\": \"max\", \"field\": \"mysql.status.innodb.buffer_pool.read.requests\", \"id\": \"ad177970-63a2-11ea-90a2-c51229c5db5f\"}, {\"script\": \"params.pool_read_requests != null && params.pool_read_requests > 0 ? (params.pool_reads/params.pool_read_requests) * 100: null\", \"type\": \"calculation\", \"variables\": [{\"field\": \"a397d571-63a2-11ea-90a2-c51229c5db5f\", \"id\": \"b1b6cb20-63a2-11ea-90a2-c51229c5db5f\", \"name\": \"pool_reads\"}, {\"field\": \"ad177970-63a2-11ea-90a2-c51229c5db5f\", \"id\": \"c3fe5be0-63a2-11ea-90a2-c51229c5db5f\", \"name\": \"pool_read_requests\"}], \"id\": \"af58ddf0-63a2-11ea-90a2-c51229c5db5f\"}], \"point_size\": \"2\", \"id\": \"a397d570-63a2-11ea-90a2-c51229c5db5f\", \"fill\": \"0.1\", \"separate_axis\": 0, \"line_width\": \"2\", \"chart_type\": \"line\", \"label\": \"Effeciency (lower is better)\", \"hidden\": false, \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(87,177,211,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"everything\"}], \"axis_position\": \"left\", \"axis_scale\": \"normal\", \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"gauge_color_rules\": [{\"id\": \"07c08ce0-63a3-11ea-90a2-c51229c5db5f\"}], \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"gauge_inner_width\": 10, \"type\": \"timeseries\", \"axis_min\": 0, \"legend_position\": \"bottom\", \"isModelInvalid\": false, \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"gauge_width\": 10, \"id\": \"515b9dd0-639f-11ea-96d8-1943b9bb65d9\", \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\"}, \"title\": \"Buffer Pool Efficiency [Metricbeat MySQL] ECS\"}"
+            },
+            "id": "a1e00160-63a4-11ea-a83e-25b8612d00cc",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-16T13:00:51.577Z",
+            "version": "WzQ2NjYsMV0="
+        }
+    ],
+    "version": "7.3.1"
+}

@@ -1,0 +1,194 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "This dashboard shows metrics for the container registry in Azure.",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"panelRefName\": \"panel_0\", \"gridData\": {\"h\": 5, \"i\": \"51fee31f-97e1-4f8e-aeb2-daeca1ccf9be\", \"y\": 0, \"x\": 0, \"w\": 9}, \"panelIndex\": \"51fee31f-97e1-4f8e-aeb2-daeca1ccf9be\", \"version\": \"7.6.0\", \"embeddableConfig\": {\"title\": \"\"}}, {\"panelIndex\": \"dde974c7-6d81-4580-9b7f-c7a999ecc19e\", \"panelRefName\": \"panel_1\", \"gridData\": {\"h\": 16, \"i\": \"dde974c7-6d81-4580-9b7f-c7a999ecc19e\", \"y\": 0, \"x\": 9, \"w\": 18}, \"title\": \"Container Registry Successful Pull Count\", \"version\": \"7.6.0\", \"embeddableConfig\": {\"title\": \"Container Registry Successful Pull Count\"}}, {\"panelIndex\": \"25a02616-f735-494a-97f7-4a56531e9e5e\", \"panelRefName\": \"panel_2\", \"gridData\": {\"h\": 16, \"i\": \"25a02616-f735-494a-97f7-4a56531e9e5e\", \"y\": 0, \"x\": 27, \"w\": 21}, \"title\": \"Container Registry Successful Push Count\", \"version\": \"7.6.0\", \"embeddableConfig\": {\"title\": \"Container Registry Successful Push Count\"}}, {\"panelIndex\": \"ec183a66-545b-4a67-bfb4-568def660612\", \"panelRefName\": \"panel_3\", \"gridData\": {\"h\": 11, \"i\": \"ec183a66-545b-4a67-bfb4-568def660612\", \"y\": 5, \"x\": 0, \"w\": 9}, \"title\": \"Containers Filters\", \"version\": \"7.6.0\", \"embeddableConfig\": {\"title\": \"Containers Filters\"}}, {\"panelIndex\": \"7f508c43-afd7-4874-86ef-c6976700759b\", \"panelRefName\": \"panel_4\", \"gridData\": {\"h\": 15, \"i\": \"7f508c43-afd7-4874-86ef-c6976700759b\", \"y\": 16, \"x\": 0, \"w\": 24}, \"title\": \"Container Registry Total Pull Count\", \"version\": \"7.6.0\", \"embeddableConfig\": {\"title\": \"Container Registry Total Pull Count\"}}, {\"panelIndex\": \"97a048da-9b56-420b-af8c-1f0d568f0f94\", \"panelRefName\": \"panel_5\", \"gridData\": {\"h\": 15, \"i\": \"97a048da-9b56-420b-af8c-1f0d568f0f94\", \"y\": 16, \"x\": 24, \"w\": 24}, \"title\": \"Container Registry Total Push Count\", \"version\": \"7.6.0\", \"embeddableConfig\": {\"title\": \"Container Registry Total Push Count\"}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Azure] Container Registry Overview",
+                "version": 1
+            },
+            "id": "6f2393f0-6d08-11ea-8fe8-71add5fd7c38",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "1e70dc50-6d22-11ea-8fe8-71add5fd7c38",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "7972b260-6d07-11ea-8fe8-71add5fd7c38",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "b88b7f90-6d07-11ea-8fe8-71add5fd7c38",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "0fa31060-6aae-11ea-af5c-73e8f396b3e9",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "ff303710-6d07-11ea-8fe8-71add5fd7c38",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "ddea7430-6d07-11ea-8fe8-71add5fd7c38",
+                    "name": "panel_5",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2020-03-24T13:49:52.134Z",
+            "version": "WzY1NDUsN10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Navigation Container Registry Overview [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"markdown\", \"params\": {\"markdown\": \"### Azure Containers\\n\\n[Instances](#/dashboard/9c11ac60-6cf6-11ea-8fe8-71add5fd7c38) |\\n[**Registries**](#/dashboard/6f2393f0-6d08-11ea-8fe8-71add5fd7c38) |\\n[Services](#/dashboard/dae20ed0-6d0a-11ea-8fe8-71add5fd7c38) \", \"openLinksInNewTab\": false, \"fontSize\": 12}, \"title\": \"Navigation Container Registry Overview [Metricbeat Azure]\"}"
+            },
+            "id": "1e70dc50-6d22-11ea-8fe8-71add5fd7c38",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-23T18:59:05.580Z",
+            "version": "WzY0MjksNV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Container Registry Successful Pull Count [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.container_registry.successful_pull_count.avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": \"\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": \"02\", \"chart_type\": \"line\", \"label\": \"Container Registry Successful Pull Count\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(188,74,0,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"filebeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type : \\\"Microsoft.ContainerRegistry/registries\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Container Registry Successful Pull Count [Metricbeat Azure]\"}"
+            },
+            "id": "7972b260-6d07-11ea-8fe8-71add5fd7c38",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-23T16:26:30.797Z",
+            "version": "WzYzMTEsNV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Container Registry Successful Push Count [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.container_registry.successful_push_count.avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": \"\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": \"02\", \"chart_type\": \"line\", \"label\": \"Container Registry Successful Push Count\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(128,137,0,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"filebeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type : \\\"Microsoft.ContainerRegistry/registries\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Container Registry Successful Push Count [Metricbeat Azure]\"}"
+            },
+            "id": "b88b7f90-6d07-11ea-8fe8-71add5fd7c38",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-23T16:27:11.947Z",
+            "version": "WzYzMTgsNV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Containers Filters [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"input_control_vis\", \"params\": {\"updateFiltersOnChange\": true, \"pinFilters\": false, \"controls\": [{\"label\": \"Subscription\", \"fieldName\": \"azure.subscription_id\", \"id\": \"1584710440054\", \"parent\": \"\", \"indexPatternRefName\": \"control_0_index_pattern\", \"type\": \"list\", \"options\": {\"size\": 5, \"type\": \"terms\", \"multiselect\": false, \"dynamicOptions\": true, \"order\": \"desc\"}}, {\"label\": \"Resource Group\", \"fieldName\": \"azure.resource.group\", \"id\": \"1584710497045\", \"parent\": \"\", \"indexPatternRefName\": \"control_1_index_pattern\", \"type\": \"list\", \"options\": {\"size\": 5, \"type\": \"terms\", \"multiselect\": false, \"dynamicOptions\": true, \"order\": \"desc\"}}, {\"label\": \"Resource\", \"fieldName\": \"cloud.instance.name\", \"id\": \"1584710535722\", \"parent\": \"\", \"indexPatternRefName\": \"control_2_index_pattern\", \"type\": \"list\", \"options\": {\"size\": 5, \"type\": \"terms\", \"multiselect\": false, \"dynamicOptions\": true, \"order\": \"desc\"}}], \"useTimeFilter\": false}, \"title\": \"Containers Filters [Metricbeat Azure]\"}"
+            },
+            "id": "0fa31060-6aae-11ea-af5c-73e8f396b3e9",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_0_index_pattern",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_1_index_pattern",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_2_index_pattern",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-03-23T18:32:43.461Z",
+            "version": "WzY0MDAsNV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Container Registry Total Pull Count [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.container_registry.total_pull_count.avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": \"\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": \"02\", \"chart_type\": \"line\", \"label\": \"Container Registry Total Pull Count\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(254,146,0,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"filebeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type : \\\"Microsoft.ContainerRegistry/registries\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Container Registry Total Pull Count [Metricbeat Azure]\"}"
+            },
+            "id": "ff303710-6d07-11ea-8fe8-71add5fd7c38",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-23T13:13:17.642Z",
+            "version": "WzYwNDQsNV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Container Registry Total Push Count [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.container_registry.total_push_count.avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": \"\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": \"02\", \"chart_type\": \"line\", \"label\": \"Container Registry Total Push Count\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(252,196,0,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"filebeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type : \\\"Microsoft.ContainerRegistry/registries\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Container Registry Total Push Count [Metricbeat Azure]\"}"
+            },
+            "id": "ddea7430-6d07-11ea-8fe8-71add5fd7c38",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-03-23T13:12:37.912Z",
+            "version": "WzYwMzYsNV0="
+        }
+    ],
+    "version": "7.6.0"
+}

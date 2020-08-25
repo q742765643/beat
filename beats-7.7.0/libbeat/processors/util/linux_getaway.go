@@ -15,7 +15,7 @@ var getawayStart bool = false
 var w sync.WaitGroup
 func linuxGeteway() () {
 	sysType := runtime.GOOS
-	if "linux" == sysType && ""==getaway {
+	if "linux" == sysType{
 		path, _ := os.Getwd()
 		ch := exec.Command("sh", "-c", "chmod 777 "+path+"/module/getaway")
 		o, err := ch.Output()

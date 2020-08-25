@@ -1,0 +1,228 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Various stats for Prometheus Server",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"panelIndex\": \"1\", \"panelRefName\": \"panel_0\", \"gridData\": {\"h\": 15, \"i\": \"1\", \"y\": 0, \"x\": 0, \"w\": 24}, \"title\": \"HTTP Requests\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"2\", \"panelRefName\": \"panel_1\", \"gridData\": {\"h\": 15, \"i\": \"2\", \"y\": 0, \"x\": 24, \"w\": 24}, \"title\": \"Query Durations\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"3\", \"panelRefName\": \"panel_2\", \"gridData\": {\"h\": 7, \"i\": \"3\", \"y\": 15, \"x\": 24, \"w\": 24}, \"title\": \"Number of Targets\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"4\", \"panelRefName\": \"panel_3\", \"gridData\": {\"h\": 15, \"i\": \"4\", \"y\": 22, \"x\": 0, \"w\": 24}, \"title\": \"Head Chunks\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"5\", \"panelRefName\": \"panel_4\", \"gridData\": {\"h\": 7, \"i\": \"5\", \"y\": 15, \"x\": 0, \"w\": 11}, \"title\": \"WAL Stats\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"6\", \"panelRefName\": \"panel_5\", \"gridData\": {\"h\": 7, \"i\": \"6\", \"y\": 15, \"x\": 11, \"w\": 13}, \"title\": \"Reload Count\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"7\", \"panelRefName\": \"panel_6\", \"gridData\": {\"h\": 15, \"i\": \"7\", \"y\": 22, \"x\": 24, \"w\": 10}, \"title\": \"Remote API Reads\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"8\", \"panelRefName\": \"panel_7\", \"gridData\": {\"h\": 15, \"i\": \"8\", \"y\": 22, \"x\": 34, \"w\": 14}, \"title\": \"Alert Notifications\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Prometheus] Overview",
+                "version": 1
+            },
+            "id": "6a9b80c0-b2ed-11e9-9a23-67ee28886a4b",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "19886730-b2e7-11e9-9a23-67ee28886a4b",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "f77c5900-b2e4-11e9-9a23-67ee28886a4b",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "ffb70040-b2ec-11e9-9a23-67ee28886a4b",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "79345b00-b2e5-11e9-9a23-67ee28886a4b",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "138704c0-b2f8-11e9-9a23-67ee28886a4b",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "d7740b40-b2fc-11e9-9a23-67ee28886a4b",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "edd33100-b305-11e9-9a23-67ee28886a4b",
+                    "name": "panel_6",
+                    "type": "visualization"
+                },
+                {
+                    "id": "0b356630-b308-11e9-9a23-67ee28886a4b",
+                    "name": "panel_7",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-08-02T10:59:13.474Z",
+            "version": "WzYxMCwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "HTTP Requests [Metricbeat Prometheus]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"b2579fe0-b2e6-11e9-96a9-535735f478e7\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_http_requests_total\", \"id\": \"b2579fe2-b2e6-11e9-96a9-535735f478e7\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"b2579fe2-b2e6-11e9-96a9-535735f478e7\", \"id\": \"4ff83340-b445-11e9-88c2-81f27aea5920\"}], \"point_size\": 0, \"id\": \"b2579fe1-b2e6-11e9-96a9-535735f478e7\", \"fill\": 0, \"terms_size\": \"5\", \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"HTTP Requests\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(219,223,0,1)\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"prometheus.labels.handler\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"HTTP Requests [Metricbeat Prometheus]\"}"
+            },
+            "id": "19886730-b2e7-11e9-9a23-67ee28886a4b",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-01T10:16:22.004Z",
+            "version": "WzUwMCwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Query Durations [Metricbeat Prometheus]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"0fa40ac0-b2e3-11e9-9d48-591d2f459020\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_engine_query_duration_seconds\", \"id\": \"0fa40ac2-b2e3-11e9-9d48-591d2f459020\"}], \"point_size\": 0, \"id\": \"0fa40ac1-b2e3-11e9-9d48-591d2f459020\", \"fill\": 0, \"terms_order_by\": \"_count\", \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"Query Durations p99\", \"split_filters\": [{\"color\": \"#3185FC\", \"label\": \"Inner\", \"id\": \"5089a8b0-b2e3-11e9-a478-1744b9617108\", \"filter\": {\"language\": \"kuery\", \"query\": \"prometheus.labels.slice : \\\"inner_eval\\\" \"}}], \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": {\"language\": \"kuery\", \"query\": \"prometheus.labels.quantile : \\\"0.99\\\" \"}, \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"'0.0[0000]'\", \"split_mode\": \"terms\", \"terms_field\": \"prometheus.labels.slice\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"prometheus.labels.quantile : \\\"0.99\\\"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Query Durations [Metricbeat Prometheus]\"}"
+            },
+            "id": "f77c5900-b2e4-11e9-9a23-67ee28886a4b",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-31T12:29:35.301Z",
+            "version": "WzQ0MSwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Number of Targets [Metricbeat Prometheus]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"08298160-b2ea-11e9-a1e3-dd90a90fb461\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_sd_discovered_targets\", \"id\": \"08298162-b2ea-11e9-a1e3-dd90a90fb461\"}], \"point_size\": \"0\", \"steps\": 1, \"id\": \"08298161-b2ea-11e9-a1e3-dd90a90fb461\", \"fill\": \"0.2\", \"terms_order_by\": \"08298162-b2ea-11e9-a1e3-dd90a90fb461\", \"separate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"Total Number of Discovered Targets\", \"terms_direction\": \"desc\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"prometheus.labels.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Number of Targets [Metricbeat Prometheus]\"}"
+            },
+            "id": "ffb70040-b2ec-11e9-9a23-67ee28886a4b",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-31T12:34:36.214Z",
+            "version": "WzQ2MiwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Head Chunks [Metricbeat Prometheus]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"2f5a6920-b2e5-11e9-b248-0162f01eb4ee\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_tsdb_head_chunks\", \"id\": \"2f5a9031-b2e5-11e9-b248-0162f01eb4ee\"}], \"point_size\": 0, \"id\": \"2f5a9030-b2e5-11e9-b248-0162f01eb4ee\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"Head Chunks\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(101,50,148,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Head Chunks [Metricbeat Prometheus]\"}"
+            },
+            "id": "79345b00-b2e5-11e9-9a23-67ee28886a4b",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-31T12:35:36.349Z",
+            "version": "WzQ2OSwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "WAL [Metricbeat Prometheus]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"top_n\", \"bar_color_rules\": [{\"id\": \"f4985140-b2f7-11e9-8481-37d39feabbb2\"}], \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"ce91d200-b2f7-11e9-9e3f-5b12e64d4361\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_tsdb_wal_truncations_failed_total\", \"id\": \"ce91f911-b2f7-11e9-9e3f-5b12e64d4361\"}], \"point_size\": 0, \"id\": \"ce91f910-b2f7-11e9-9e3f-5b12e64d4361\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"Failed WAL Truncations\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(247,75,56,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_tsdb_wal_corruptions_total\", \"id\": \"ce91f913-b2f7-11e9-9e3f-5b12e64d4361\"}], \"point_size\": 0, \"id\": \"ce91f912-b2f7-11e9-9e3f-5b12e64d4361\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"WAL Corruptions Total\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(251,158,0,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"WAL [Metricbeat Prometheus]\"}"
+            },
+            "id": "138704c0-b2f8-11e9-9a23-67ee28886a4b",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-31T12:31:29.355Z",
+            "version": "WzQ0NywxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Reload Count [Metricbeat Prometheus]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"6acaf760-b2fc-11e9-86ff-9300d5a00260\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_tsdb_reloads_total\", \"id\": \"6acaf762-b2fc-11e9-86ff-9300d5a00260\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"6acaf762-b2fc-11e9-86ff-9300d5a00260\", \"id\": \"6acaf764-b2fc-11e9-86ff-9300d5a00260\"}, {\"type\": \"positive_only\", \"field\": \"6acaf764-b2fc-11e9-86ff-9300d5a00260\", \"id\": \"6acaf763-b2fc-11e9-86ff-9300d5a00260\"}], \"point_size\": 0, \"steps\": 1, \"id\": \"6acaf761-b2fc-11e9-86ff-9300d5a00260\", \"fill\": \"0.2\", \"separate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"reloads\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(12,121,125,1)\", \"formatter\": \"'0.0[0000]'\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_tsdb_reloads_failures_total\", \"id\": \"6acaf766-b2fc-11e9-86ff-9300d5a00260\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"6acaf766-b2fc-11e9-86ff-9300d5a00260\", \"id\": \"6acaf768-b2fc-11e9-86ff-9300d5a00260\"}, {\"type\": \"positive_only\", \"field\": \"6acaf768-b2fc-11e9-86ff-9300d5a00260\", \"id\": \"6acaf767-b2fc-11e9-86ff-9300d5a00260\"}], \"point_size\": 0, \"steps\": 1, \"id\": \"6acaf765-b2fc-11e9-86ff-9300d5a00260\", \"fill\": \"0.2\", \"separate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"failures\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#DB1374\", \"formatter\": \"'0.0[0000]'\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Reload Count [Metricbeat Prometheus]\"}"
+            },
+            "id": "d7740b40-b2fc-11e9-9a23-67ee28886a4b",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-30T19:05:35.833Z",
+            "version": "WzM3OSwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Remote API Reads [Metricbeat Prometheus]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"a3dbf320-b305-11e9-a86d-99bede5bfcc3\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_api_remote_read_queries\", \"id\": \"a3dbf322-b305-11e9-a86d-99bede5bfcc3\"}, {\"type\": \"derivative\", \"unit\": \"1s\", \"field\": \"a3dbf322-b305-11e9-a86d-99bede5bfcc3\", \"id\": \"a3dbf324-b305-11e9-a86d-99bede5bfcc3\"}, {\"type\": \"positive_only\", \"field\": \"a3dbf324-b305-11e9-a86d-99bede5bfcc3\", \"id\": \"a3dbf323-b305-11e9-a86d-99bede5bfcc3\"}], \"point_size\": 0, \"id\": \"a3dbf321-b305-11e9-a86d-99bede5bfcc3\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"# of remote read queries\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(219,223,0,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Remote API Reads [Metricbeat Prometheus]\"}"
+            },
+            "id": "edd33100-b305-11e9-9a23-67ee28886a4b",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-30T20:09:25.775Z",
+            "version": "WzM5NCwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Alert Notifications [Metricbeat Prometheus]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"b1741ab0-b307-11e9-95cd-c3f5589dc7d2\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_notifications_queue_capacity\", \"id\": \"b1741ab2-b307-11e9-95cd-c3f5589dc7d2\"}], \"point_size\": 0, \"id\": \"b1741ab1-b307-11e9-95cd-c3f5589dc7d2\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"Capacity of the alert notifications queue\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(211,49,21,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.prometheus_notifications_queue_length\", \"id\": \"b1741ab4-b307-11e9-95cd-c3f5589dc7d2\"}], \"point_size\": 0, \"id\": \"b1741ab3-b307-11e9-95cd-c3f5589dc7d2\", \"fill\": \"0.2\", \"separate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"Alert notifications in the queue\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(176,188,0,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Alert Notifications [Metricbeat Prometheus]\"}"
+            },
+            "id": "0b356630-b308-11e9-9a23-67ee28886a4b",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-07-30T20:24:34.067Z",
+            "version": "WzQwMiwxXQ=="
+        }
+    ],
+    "version": "7.3.0"
+}

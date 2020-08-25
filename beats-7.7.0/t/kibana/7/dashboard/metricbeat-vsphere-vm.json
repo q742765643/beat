@@ -1,0 +1,222 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Overview of the VSphere virtualmachine metrics",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"panelRefName\": \"panel_0\", \"gridData\": {\"h\": 18, \"i\": \"80c96802-a5b2-4196-91b7-9e39f59f472b\", \"y\": 0, \"x\": 0, \"w\": 24}, \"panelIndex\": \"80c96802-a5b2-4196-91b7-9e39f59f472b\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_1\", \"gridData\": {\"h\": 18, \"i\": \"948b7896-98e3-4260-b06e-78ac354bed69\", \"y\": 0, \"x\": 24, \"w\": 24}, \"panelIndex\": \"948b7896-98e3-4260-b06e-78ac354bed69\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_2\", \"gridData\": {\"h\": 19, \"i\": \"b6d0ae24-0b52-4d16-bbcd-a9d6143054d2\", \"y\": 18, \"x\": 0, \"w\": 24}, \"panelIndex\": \"b6d0ae24-0b52-4d16-bbcd-a9d6143054d2\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_3\", \"gridData\": {\"h\": 19, \"i\": \"52f8ef2e-3fa3-4494-bdb4-179737fc2fda\", \"y\": 18, \"x\": 24, \"w\": 24}, \"panelIndex\": \"52f8ef2e-3fa3-4494-bdb4-179737fc2fda\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_4\", \"gridData\": {\"h\": 35, \"i\": \"dfc089db-6bab-4410-962d-14cc622d7681\", \"y\": 37, \"x\": 0, \"w\": 48}, \"panelIndex\": \"dfc089db-6bab-4410-962d-14cc622d7681\", \"version\": \"7.4.0\", \"embeddableConfig\": {\"vis\": null}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat VSphere] VMs overview ECS",
+                "version": 1
+            },
+            "id": "8a2d1540-f049-11e9-aaf3-15199b632da7",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "dae93d90-f041-11e9-aaf3-15199b632da7",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "a6026680-f017-11e9-aaf3-15199b632da7",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "5c6a93a0-f04c-11e9-aaf3-15199b632da7",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "9afddd20-f04c-11e9-aaf3-15199b632da7",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "e3a3e080-f018-11e9-aaf3-15199b632da7",
+                    "name": "panel_4",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-10-19T09:21:58.142Z",
+            "version": "WzY4NywxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "CPU/RAM/Network per VM [Metricbeat VSphere] ECS",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {}, \"type\": \"count\", \"id\": \"1\"}, {\"schema\": \"bucket\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 50, \"customLabel\": \"Name\", \"field\": \"vsphere.virtualmachine.name\", \"order\": \"desc\", \"otherBucket\": false, \"orderBy\": \"1\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"2\"}, {\"schema\": \"bucket\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 5, \"customLabel\": \"Used CPU\", \"field\": \"vsphere.virtualmachine.cpu.used.mhz\", \"order\": \"desc\", \"otherBucket\": false, \"orderAgg\": {\"schema\": \"orderAgg\", \"enabled\": true, \"params\": {\"field\": \"vsphere.virtualmachine.cpu.used.mhz\"}, \"type\": \"max\", \"id\": \"5-orderAgg\"}, \"orderBy\": \"custom\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"5\"}, {\"schema\": \"bucket\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 15, \"customLabel\": \"Total RAM\", \"field\": \"vsphere.virtualmachine.memory.total.guest.bytes\", \"order\": \"desc\", \"otherBucket\": false, \"orderAgg\": {\"schema\": \"orderAgg\", \"enabled\": true, \"params\": {\"field\": \"vsphere.virtualmachine.memory.total.guest.bytes\"}, \"type\": \"max\", \"id\": \"3-orderAgg\"}, \"orderBy\": \"custom\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"3\"}, {\"schema\": \"bucket\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 5, \"customLabel\": \"Networks\", \"field\": \"vsphere.virtualmachine.network_names\", \"order\": \"desc\", \"otherBucket\": false, \"orderBy\": \"1\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"4\"}], \"type\": \"table\", \"params\": {\"dimensions\": {\"metrics\": [{\"aggType\": \"count\", \"format\": {\"id\": \"number\"}, \"params\": {}, \"accessor\": 4}], \"buckets\": [{\"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"accessor\": 0}, {\"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"number\"}, \"id\": \"terms\"}, \"params\": {}, \"accessor\": 1}, {\"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"bytes\"}, \"id\": \"terms\"}, \"params\": {}, \"accessor\": 2}, {\"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"accessor\": 3}]}, \"percentageCol\": \"\", \"sort\": {\"direction\": null, \"columnIndex\": null}, \"showPartialRows\": false, \"showMetricsAtAllLevels\": false, \"perPage\": 10, \"showTotal\": false, \"totalFunc\": \"sum\"}, \"title\": \"CPU/RAM/Network per VM [Metricbeat VSphere] ECS\"}"
+            },
+            "id": "dae93d90-f041-11e9-aaf3-15199b632da7",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [
+                {
+                    "id": "1411b690-f017-11e9-aaf3-15199b632da7",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-10-19T09:14:27.107Z",
+            "version": "WzQ2MCwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "OS Distribution [Metricbeat VSphere] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {}, \"type\": \"count\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 20, \"customLabel\": \"Operating Systems\", \"field\": \"vsphere.virtualmachine.os\", \"order\": \"desc\", \"otherBucket\": false, \"orderBy\": \"1\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"dimensions\": {\"metric\": {\"aggType\": \"count\", \"format\": {\"id\": \"number\"}, \"params\": {}, \"accessor\": 1}, \"buckets\": [{\"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"accessor\": 0}]}, \"legendPosition\": \"right\", \"addTooltip\": true, \"addLegend\": true, \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"truncate\": 100, \"values\": true, \"show\": false}}, \"title\": \"OS Pie [Metricbeat VSphere] ECS\"}"
+            },
+            "id": "a6026680-f017-11e9-aaf3-15199b632da7",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [
+                {
+                    "id": "1411b690-f017-11e9-aaf3-15199b632da7",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-10-19T09:14:27.107Z",
+            "version": "WzQ2MSwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "Networks from virtualmachine [Metricbeat VSphere] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {}, \"type\": \"count\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 15, \"customLabel\": \"Networks\", \"field\": \"vsphere.virtualmachine.network_names\", \"order\": \"desc\", \"otherBucket\": false, \"orderBy\": \"1\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"dimensions\": {\"metric\": {\"aggType\": \"count\", \"format\": {\"id\": \"number\"}, \"params\": {}, \"accessor\": 1}, \"buckets\": [{\"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"accessor\": 0}]}, \"legendPosition\": \"right\", \"addTooltip\": true, \"addLegend\": true, \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"truncate\": 100, \"values\": true, \"show\": false}}, \"title\": \"Networks from virtualmachine [Metricbeat VSphere] ECS\"}"
+            },
+            "id": "5c6a93a0-f04c-11e9-aaf3-15199b632da7",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [
+                {
+                    "id": "1411b690-f017-11e9-aaf3-15199b632da7",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-10-19T09:14:27.107Z",
+            "version": "WzQ2MiwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "VMs per ESXI host [Metricbeat VSphere] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {}, \"type\": \"count\", \"id\": \"1\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 20, \"customLabel\": \"VM ESXi Host\", \"field\": \"vsphere.virtualmachine.host.hostname\", \"order\": \"desc\", \"otherBucket\": false, \"orderBy\": \"1\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"dimensions\": {\"metric\": {\"aggType\": \"count\", \"format\": {\"id\": \"number\"}, \"params\": {}, \"accessor\": 1}, \"buckets\": [{\"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"accessor\": 0}]}, \"legendPosition\": \"right\", \"addTooltip\": true, \"addLegend\": true, \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"truncate\": 100, \"values\": true, \"show\": false}}, \"title\": \"how many VMs run on a ESXI host [Metricbeat VSphere] ECS\"}"
+            },
+            "id": "9afddd20-f04c-11e9-aaf3-15199b632da7",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [
+                {
+                    "id": "1411b690-f017-11e9-aaf3-15199b632da7",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-10-19T09:14:27.107Z",
+            "version": "WzQ2MywxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "VM placements on ESXi Hosts[Metricbeat VSphere] ECS",
+                "uiStateJSON": "{\"vis\": {\"defaultColors\": {\"0 - 40\": \"rgb(247,252,245)\", \"80 - 120\": \"rgb(116,196,118)\", \"40 - 80\": \"rgb(199,233,192)\", \"120 - 160\": \"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {}, \"type\": \"count\", \"id\": \"1\"}, {\"schema\": \"group\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 50, \"customLabel\": \"VM Name\", \"field\": \"vsphere.virtualmachine.name\", \"order\": \"desc\", \"otherBucket\": false, \"orderBy\": \"1\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"2\"}, {\"schema\": \"segment\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 50, \"customLabel\": \"ESXi Host\", \"field\": \"vsphere.virtualmachine.host.hostname\", \"order\": \"desc\", \"otherBucket\": false, \"orderBy\": \"1\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"3\"}], \"type\": \"heatmap\", \"params\": {\"colorsNumber\": 4, \"dimensions\": {\"series\": [{\"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"accessor\": 0}], \"y\": [{\"aggType\": \"count\", \"format\": {\"id\": \"number\"}, \"params\": {}, \"accessor\": 2}], \"x\": {\"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}, \"accessor\": 1}}, \"percentageMode\": false, \"addTooltip\": true, \"colorSchema\": \"Greens\", \"legendPosition\": \"right\", \"enableHover\": false, \"valueAxes\": [{\"type\": \"value\", \"show\": false, \"scale\": {\"type\": \"linear\", \"defaultYExtents\": false}, \"labels\": {\"color\": \"black\", \"overwriteColor\": false, \"show\": false, \"rotate\": 0}, \"id\": \"ValueAxis-1\"}], \"colorsRange\": [], \"times\": [], \"setColorRange\": false, \"addLegend\": true, \"type\": \"heatmap\", \"invertColors\": false}, \"title\": \"VM placements on ESXi Hosts[Metricbeat VSphere] ECS\"}"
+            },
+            "id": "e3a3e080-f018-11e9-aaf3-15199b632da7",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [
+                {
+                    "id": "1411b690-f017-11e9-aaf3-15199b632da7",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-10-19T09:14:27.107Z",
+            "version": "WzQ2NCwxXQ=="
+        },
+        {
+            "attributes": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"highlightAll\": true, \"query\": {\"language\": \"kuery\", \"query\": \"event.module: \\\"vsphere\\\" \"}, \"version\": true, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\", \"filter\": []}"
+                },
+                "sort": [
+                    [
+                        "@timestamp",
+                        "desc"
+                    ]
+                ],
+                "title": "search for event module [Metricbeat VSphere] ECS",
+                "version": 1
+            },
+            "id": "1411b690-f017-11e9-aaf3-15199b632da7",
+            "migrationVersion": {
+                "search": "7.4.0"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "search",
+            "updated_at": "2019-10-19T09:14:27.107Z",
+            "version": "WzMwNiwxXQ=="
+        }
+    ],
+    "version": "7.4.0"
+}

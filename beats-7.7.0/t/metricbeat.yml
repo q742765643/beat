@@ -46,7 +46,7 @@ setup.template.settings:
 # These settings control loading the sample dashboards to the Kibana index. Loading
 # the dashboards is disabled by default and can be enabled either by setting the
 # options here or by using the `setup` command.
-setup.dashboards.enabled: true
+#setup.dashboards.enabled: false
 
 # The URL from where to download the dashboards archive. By default this URL
 # has a value which is computed based on the Beat name and version. For released
@@ -64,7 +64,7 @@ setup.kibana:
   # Scheme and port can be left out and will be set to the default (http and 5601)
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
-  host: "10.1.100.10:5601"
+  #host: "localhost:5601"
 
   # Kibana Space ID
   # ID of the Kibana Space into which the dashboards should be loaded. By default,
@@ -91,8 +91,8 @@ setup.kibana:
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["10.1.100.10:9200"]
-  index: "metricbeat-%{+yyyyMMdd}"
+  hosts: ["localhost:9200"]
+
   # Protocol - either `http` (default) or `https`.
   #protocol: "https"
 
@@ -101,8 +101,8 @@ output.elasticsearch:
   #username: "elastic"
   #password: "changeme"
 
-  #----------------------------- Logstash output --------------------------------
-  #output.logstash:
+#----------------------------- Logstash output --------------------------------
+#output.logstash:
   # The Logstash hosts
   #hosts: ["localhost:5044"]
 
@@ -163,7 +163,3 @@ processors:
 
 # This allows to enable 6.7 migration aliases
 #migration.6_to_7.enabled: true
-setup.ilm.enabled: false
-name: 10.1.100.10
-setup.template.name: "metricbeat"
-setup.template.pattern: "metricbeat-*"

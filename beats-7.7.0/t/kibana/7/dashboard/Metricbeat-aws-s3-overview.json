@@ -1,0 +1,209 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Overview of AWS S3 Metrics",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"panelIndex\": \"1\", \"panelRefName\": \"panel_0\", \"gridData\": {\"h\": 7, \"i\": \"1\", \"y\": 6, \"x\": 0, \"w\": 24}, \"title\": \"S3 Daily Storage Bucket Size in Bytes\", \"version\": \"7.7.0\", \"embeddableConfig\": {\"title\": \"S3 Daily Storage Bucket Size in Bytes\"}}, {\"panelIndex\": \"2\", \"panelRefName\": \"panel_1\", \"gridData\": {\"h\": 7, \"i\": \"2\", \"y\": 6, \"x\": 24, \"w\": 24}, \"title\": \"S3 Daily Storage Number of Objects\", \"version\": \"7.7.0\", \"embeddableConfig\": {\"title\": \"S3 Daily Storage Number of Objects\"}}, {\"panelIndex\": \"3\", \"panelRefName\": \"panel_2\", \"gridData\": {\"h\": 7, \"i\": \"3\", \"y\": 13, \"x\": 0, \"w\": 24}, \"title\": \"S3 Request Latency Total Request in ms\", \"version\": \"7.7.0\", \"embeddableConfig\": {\"title\": \"S3 Request Latency Total Request in ms\"}}, {\"panelIndex\": \"4\", \"panelRefName\": \"panel_3\", \"gridData\": {\"h\": 6, \"i\": \"4\", \"y\": 0, \"x\": 24, \"w\": 13}, \"title\": \"S3 Total Error 4xx\", \"version\": \"7.7.0\", \"embeddableConfig\": {\"title\": \"S3 Total Error 4xx\"}}, {\"panelIndex\": \"5\", \"panelRefName\": \"panel_4\", \"gridData\": {\"h\": 6, \"i\": \"5\", \"y\": 0, \"x\": 37, \"w\": 11}, \"title\": \"S3 Total Error 5xx\", \"version\": \"7.7.0\", \"embeddableConfig\": {\"title\": \"S3 Total Error 5xx\"}}, {\"panelIndex\": \"6\", \"panelRefName\": \"panel_5\", \"gridData\": {\"h\": 6, \"i\": \"6\", \"y\": 0, \"x\": 0, \"w\": 24}, \"title\": \"S3 Filters\", \"version\": \"7.7.0\", \"embeddableConfig\": {\"title\": \"S3 Filters\"}}, {\"panelIndex\": \"7\", \"panelRefName\": \"panel_6\", \"gridData\": {\"h\": 7, \"i\": \"7\", \"y\": 13, \"x\": 24, \"w\": 24}, \"title\": \"S3 Total Requests\", \"version\": \"7.7.0\", \"embeddableConfig\": {\"title\": \"S3 Total Requests\"}}]",
+                "refreshInterval": {
+                    "pause": true,
+                    "value": 0
+                },
+                "timeFrom": "now-1d",
+                "timeRestore": true,
+                "timeTo": "now",
+                "title": "[Metricbeat AWS] S3 Overview",
+                "version": 1
+            },
+            "id": "a096b830-4762-11e9-8062-c98a86cb6f94",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "2dbb8f90-4760-11e9-8062-c98a86cb6f94",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "3a3914d0-4761-11e9-8062-c98a86cb6f94",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "2b2d58b0-4762-11e9-8062-c98a86cb6f94",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "81d83c70-4762-11e9-8062-c98a86cb6f94",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "8b34a100-4762-11e9-8062-c98a86cb6f94",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "6e3285d0-4763-11e9-8062-c98a86cb6f94",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "d186fd50-4763-11e9-8062-c98a86cb6f94",
+                    "name": "panel_6",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2020-04-06T16:29:50.517Z",
+            "version": "WzkxOSwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "S3 Daily Storage Bucket Size in Bytes [Metricbeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"f703aff0-475f-11e9-a9de-e776805ecfc9\"}], \"interval\": \"1d\", \"default_timefield\": \"@timestamp\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"aws.s3_daily_storage.bucket.size.bytes\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"terms_size\": \"5\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0\", \"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"split_mode\": \"terms\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"terms_field\": \"aws.s3.bucket.name\"}], \"background_color_rules\": [{\"id\": \"f679e680-475f-11e9-a9de-e776805ecfc9\"}], \"type\": \"top_n\", \"drop_last_bucket\": 0, \"axis_position\": \"left\", \"axis_scale\": \"normal\", \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"gauge_color_rules\": [{\"id\": \"f8388670-475f-11e9-a9de-e776805ecfc9\"}], \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"gauge_inner_width\": 10, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\"}, \"title\": \"S3 Daily Storage Bucket Size in Bytes [Metricbeat AWS]\"}"
+            },
+            "id": "2dbb8f90-4760-11e9-8062-c98a86cb6f94",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-04-06T16:01:45.966Z",
+            "version": "Wzg2NCwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "S3 Daily Storage Number of Objects [Metricbeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"01dad830-4761-11e9-bf81-69a4e579cab5\"}], \"interval\": \"1d\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"167ea870-4761-11e9-bf81-69a4e579cab5\"}], \"type\": \"top_n\", \"drop_last_bucket\": 0, \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"aws.s3_daily_storage.number_of_objects\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"terms_size\": \"5\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"split_mode\": \"terms\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"terms_field\": \"aws.s3.bucket.name\"}]}, \"title\": \"S3 Daily Storage Number of Objects [Metricbeat AWS]\"}"
+            },
+            "id": "3a3914d0-4761-11e9-8062-c98a86cb6f94",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-04-06T16:15:51.106Z",
+            "version": "WzkwMywyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "S3 Request Latency Total Request in ms [Metricbeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"pivot_id\": \"aws.s3.bucket.name\", \"bar_color_rules\": [{\"id\": \"67cb0930-4761-11e9-bf81-69a4e579cab5\"}], \"interval\": \"1d\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"c0d11b00-4761-11e9-bf81-69a4e579cab5\"}], \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"aws.s3_request.latency.total_request.ms\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"terms_size\": \"5\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"label\": \"Latency in ms\", \"separate_axis\": 0, \"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"line_width\": 1, \"chart_type\": \"line\", \"color_rules\": [{\"id\": \"ac2ef870-4761-11e9-bf81-69a4e579cab5\"}], \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"aws.s3.bucket.name\"}], \"gauge_style\": \"half\", \"axis_scale\": \"normal\", \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"gauge_color_rules\": [{\"id\": \"6eafde10-4761-11e9-bf81-69a4e579cab5\"}], \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"gauge_inner_width\": 10, \"show_legend\": 1, \"type\": \"top_n\", \"isModelInvalid\": false, \"show_grid\": 1, \"default_index_pattern\": \"metricbeat-*\", \"gauge_width\": 10, \"axis_position\": \"left\", \"index_pattern\": \"metricbeat-*\", \"drop_last_bucket\": 0}, \"title\": \"S3 Request Latency Total Request in ms [Metricbeat AWS]\"}"
+            },
+            "id": "2b2d58b0-4762-11e9-8062-c98a86cb6f94",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-04-06T16:24:42.835Z",
+            "version": "WzkxMiwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "S3 Total Error 4xx [Metricbeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"bar_color_rules\": [{\"id\": \"5ad9a190-4762-11e9-bf81-69a4e579cab5\"}], \"interval\": \"auto\", \"axis_position\": \"left\", \"background_color_rules\": [{\"id\": \"59207fe0-4762-11e9-bf81-69a4e579cab5\"}], \"type\": \"metric\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"aws.s3_request.errors.4xx\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Total # of HTTP 4xx Errors\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"AWS S3 Total Error 4xx\"}"
+            },
+            "id": "81d83c70-4762-11e9-8062-c98a86cb6f94",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-04-03T21:29:11.214Z",
+            "version": "WzIwOCwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "S3 Total Error 5xx [Metricbeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"bar_color_rules\": [{\"id\": \"5ad9a190-4762-11e9-bf81-69a4e579cab5\"}], \"interval\": \"auto\", \"axis_position\": \"left\", \"background_color_rules\": [{\"id\": \"59207fe0-4762-11e9-bf81-69a4e579cab5\"}], \"type\": \"metric\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"aws.s3_request.errors.5xx\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Total # of HTTP 5xx Errors\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"AWS S3 Total Error 5xx\"}"
+            },
+            "id": "8b34a100-4762-11e9-8062-c98a86cb6f94",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-04-03T21:29:11.214Z",
+            "version": "WzIwOSwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "S3 Filters [Metricbeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"input_control_vis\", \"params\": {\"updateFiltersOnChange\": true, \"pinFilters\": false, \"controls\": [{\"label\": \"region\", \"indexPattern\": \"metricbeat-*\", \"fieldName\": \"cloud.region\", \"id\": \"1549397251041\", \"parent\": \"\", \"type\": \"list\", \"options\": {\"size\": 5, \"type\": \"terms\", \"multiselect\": true, \"dynamicOptions\": true, \"order\": \"desc\"}}, {\"label\": \"s3 bucket name\", \"indexPattern\": \"metricbeat-*\", \"fieldName\": \"aws.s3.bucket.name\", \"id\": \"1549512142947\", \"parent\": \"\", \"type\": \"list\", \"options\": {\"size\": 5, \"type\": \"terms\", \"multiselect\": true, \"dynamicOptions\": true, \"order\": \"desc\"}}], \"useTimeFilter\": false}, \"title\": \"AWS S3 Filters\"}"
+            },
+            "id": "6e3285d0-4763-11e9-8062-c98a86cb6f94",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-04-03T21:29:11.214Z",
+            "version": "WzIxMCwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "S3 Total Requests [Metricbeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"c7b9fca0-4763-11e9-b811-fd5d24a641d7\"}], \"interval\": \"1d\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"c03c4320-4763-11e9-b811-fd5d24a641d7\"}], \"type\": \"top_n\", \"drop_last_bucket\": 0, \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"metricbeat-*\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"aws.s3_request.requests.total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"terms_size\": \"5\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0\", \"offset_time\": \"\", \"separate_axis\": 0, \"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"line_width\": 1, \"chart_type\": \"line\", \"split_mode\": \"terms\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"terms_field\": \"aws.s3.bucket.name\"}]}, \"title\": \"S3 Total Requests [Metricbeat AWS]\"}"
+            },
+            "id": "d186fd50-4763-11e9-8062-c98a86cb6f94",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-04-06T16:25:02.532Z",
+            "version": "WzkxMywyXQ=="
+        }
+    ],
+    "version": "7.7.0"
+}

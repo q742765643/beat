@@ -1,0 +1,303 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "This Couchbase dashboard visualizes the most relevant metrics for cluster, nodes and buckets. ",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"panelIndex\": \"1\", \"panelRefName\": \"panel_0\", \"gridData\": {\"h\": 11, \"i\": \"1\", \"y\": 11, \"x\": 0, \"w\": 12}, \"title\": \"Buckets RAM Used\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"2\", \"panelRefName\": \"panel_1\", \"gridData\": {\"h\": 11, \"i\": \"2\", \"y\": 11, \"x\": 12, \"w\": 12}, \"title\": \"Buckets Disk Used\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"3\", \"panelRefName\": \"panel_2\", \"gridData\": {\"h\": 11, \"i\": \"3\", \"y\": 11, \"x\": 24, \"w\": 24}, \"title\": \"Node CPU Utilization\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"4\", \"panelRefName\": \"panel_3\", \"gridData\": {\"h\": 11, \"i\": \"4\", \"y\": 22, \"x\": 0, \"w\": 12}, \"title\": \"Buckets Operations Per Second\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"5\", \"panelRefName\": \"panel_4\", \"gridData\": {\"h\": 11, \"i\": \"5\", \"y\": 0, \"x\": 24, \"w\": 24}, \"title\": \"Operations per Node\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"6\", \"panelRefName\": \"panel_5\", \"gridData\": {\"h\": 11, \"i\": \"6\", \"y\": 0, \"x\": 0, \"w\": 12}, \"title\": \"Cluster HDD Usage\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"7\", \"panelRefName\": \"panel_6\", \"gridData\": {\"h\": 11, \"i\": \"7\", \"y\": 0, \"x\": 12, \"w\": 12}, \"title\": \"Cluster RAM\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"8\", \"panelRefName\": \"panel_7\", \"gridData\": {\"h\": 11, \"i\": \"8\", \"y\": 22, \"x\": 12, \"w\": 12}, \"title\": \"Bucket Item Count\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"9\", \"panelRefName\": \"panel_8\", \"gridData\": {\"h\": 11, \"i\": \"9\", \"y\": 33, \"x\": 24, \"w\": 24}, \"title\": \"Document Replicas\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"10\", \"panelRefName\": \"panel_9\", \"gridData\": {\"h\": 11, \"i\": \"10\", \"y\": 22, \"x\": 24, \"w\": 24}, \"title\": \"Disk space used by docs\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"11\", \"panelRefName\": \"panel_10\", \"gridData\": {\"h\": 11, \"i\": \"11\", \"y\": 33, \"x\": 0, \"w\": 24}, \"title\": \"Disk Fetches\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Couchbase] Cluster Overview",
+                "version": 1
+            },
+            "id": "46d21220-b9f1-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "e781add0-b9dc-11e9-a579-f5c0a5d81340",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "c4c81a30-b9dd-11e9-a579-f5c0a5d81340",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "467c99c0-b9de-11e9-a579-f5c0a5d81340",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "e23a9fe0-b9db-11e9-a579-f5c0a5d81340",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "17a01210-b9e0-11e9-a579-f5c0a5d81340",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "f515f2e0-b9e0-11e9-a579-f5c0a5d81340",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "7cc8def0-b9e1-11e9-a579-f5c0a5d81340",
+                    "name": "panel_6",
+                    "type": "visualization"
+                },
+                {
+                    "id": "97ee1ea0-b9f2-11e9-a579-f5c0a5d81340",
+                    "name": "panel_7",
+                    "type": "visualization"
+                },
+                {
+                    "id": "63efced0-b9f4-11e9-a579-f5c0a5d81340",
+                    "name": "panel_8",
+                    "type": "visualization"
+                },
+                {
+                    "id": "99980c90-ba8b-11e9-a579-f5c0a5d81340",
+                    "name": "panel_9",
+                    "type": "visualization"
+                },
+                {
+                    "id": "19eed0e0-ba8c-11e9-a579-f5c0a5d81340",
+                    "name": "panel_10",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-08-19T14:28:56.796Z",
+            "version": "WzE1NDYsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Buckets RAM Used [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"1ad80860-b9dc-11e9-a74b-270ba78f4926\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.bucket.memory.used.bytes\", \"id\": \"1ad80862-b9dc-11e9-a74b-270ba78f4926\"}], \"point_size\": 0, \"id\": \"1ad80861-b9dc-11e9-a74b-270ba78f4926\", \"fill\": \"0.1\", \"terms_order_by\": \"1ad80862-b9dc-11e9-a74b-270ba78f4926\", \"separate_axis\": 0, \"line_width\": \"1\", \"stacked\": \"none\", \"chart_type\": \"line\", \"label\": \" RAM used\", \"value_template\": \"{{value}}\", \"split_color_mode\": \"rainbow\", \"axis_position\": \"right\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"color\": \"rgba(164,221,0,1)\", \"formatter\": \"bytes\", \"split_mode\": \"terms\", \"terms_field\": \"couchbase.bucket.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Buckets RAM Used [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "e781add0-b9dc-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-19T14:26:15.240Z",
+            "version": "WzE0NzgsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Buckets Disk Used [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"bar_color_rules\": [{\"id\": \"9bcf0ee0-b9dd-11e9-aa9d-55aa18f46863\"}], \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"a126b410-b9dd-11e9-aa9d-55aa18f46863\"}], \"id\": \"04f7a400-b9dd-11e9-b988-d77f6106a7f0\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.bucket.disk.used.bytes\", \"id\": \"04f7a402-b9dd-11e9-b988-d77f6106a7f0\"}], \"point_size\": 0, \"id\": \"04f7a401-b9dd-11e9-b988-d77f6106a7f0\", \"fill\": \"0.1\", \"separate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"Disk Used\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(0,98,177,1)\", \"formatter\": \"bytes\", \"split_mode\": \"terms\", \"terms_field\": \"couchbase.bucket.name\"}], \"axis_position\": \"left\", \"axis_scale\": \"normal\", \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"gauge_color_rules\": [{\"id\": \"97d88050-b9dd-11e9-aa9d-55aa18f46863\"}], \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"gauge_inner_width\": 10, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\"}, \"title\": \"Buckets Disk Used [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "c4c81a30-b9dd-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-09T09:59:37.672Z",
+            "version": "Wzk5NiwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Node CPU Utilization [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"f6ae4d80-b9dd-11e9-a864-6f6fa2fda75a\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.node.cpu_utilization_rate.pct\", \"id\": \"f6ae7491-b9dd-11e9-a864-6f6fa2fda75a\"}], \"point_size\": 0, \"id\": \"f6ae7490-b9dd-11e9-a864-6f6fa2fda75a\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"stacked\": \"none\", \"chart_type\": \"line\", \"label\": \"CPU Utilization\", \"value_template\": \"{{value}}%\", \"split_color_mode\": \"rainbow\", \"axis_position\": \"right\", \"color\": \"#3185FC\", \"formatter\": \"'0.'\", \"split_mode\": \"terms\", \"terms_field\": \"couchbase.node.hostname\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Node CPU Utilization [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "467c99c0-b9de-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-09T10:01:08.255Z",
+            "version": "WzEwMzEsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Buckets Operations Per Second [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"b8a49140-b9db-11e9-bc93-69919d73c9bb\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.bucket.ops_per_sec\", \"id\": \"b8a49142-b9db-11e9-bc93-69919d73c9bb\"}], \"point_size\": 0, \"id\": \"b8a49141-b9db-11e9-bc93-69919d73c9bb\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"ops_per_sec\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#3185FC\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"couchbase.bucket.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Buckets Operations Per Second [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "e23a9fe0-b9db-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-09T09:58:23.524Z",
+            "version": "Wzk3MiwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Operations per Node [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"ec9c42a0-b9df-11e9-8634-0fd532c4482a\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.node.ops\", \"id\": \"ec9c42a2-b9df-11e9-8634-0fd532c4482a\"}], \"point_size\": 0, \"id\": \"ec9c42a1-b9df-11e9-8634-0fd532c4482a\", \"fill\": \"0.1\", \"separate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"max(couchbase.node.ops)\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(84,141,162,1)\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"couchbase.node.hostname\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Operations per Node [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "17a01210-b9e0-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-09T10:00:47.340Z",
+            "version": "WzEwMjQsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Cluster HDD Usage [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"c7abd1d0-b9e0-11e9-8604-efdef550e653\"}], \"id\": \"c34f7c90-b9e0-11e9-ab08-bf43409c5a0d\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.cluster.hdd.free.bytes\", \"id\": \"c34f7c92-b9e0-11e9-ab08-bf43409c5a0d\"}], \"point_size\": 0, \"id\": \"c34f7c91-b9e0-11e9-ab08-bf43409c5a0d\", \"fill\": \"0.2\", \"separate_axis\": 0, \"line_width\": \"1\", \"stacked\": \"none\", \"chart_type\": \"line\", \"label\": \"Free\", \"value_template\": \"{{value}}\", \"split_color_mode\": \"gradient\", \"axis_position\": \"right\", \"color\": \"rgba(67,191,147,1)\", \"formatter\": \"bytes\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.cluster.hdd.used.by_data.bytes\", \"id\": \"8949ecc1-ba89-11e9-8d4d-f510918c2882\"}], \"point_size\": \"0\", \"id\": \"8949ecc0-ba89-11e9-8d4d-f510918c2882\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Data\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"bytes\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.cluster.hdd.used.value.bytes\", \"id\": \"ce3d98e1-ba89-11e9-8d4d-f510918c2882\"}], \"point_size\": \"0\", \"id\": \"ce3d98e0-ba89-11e9-8d4d-f510918c2882\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Cluster\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"bytes\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.cluster.hdd.total.bytes\", \"id\": \"2f4dbb21-ba89-11e9-8d4d-f510918c2882\"}], \"point_size\": \"0\", \"id\": \"2f4dbb20-ba89-11e9-8d4d-f510918c2882\", \"fill\": \"0\", \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Total\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(159,5,0,1)\", \"formatter\": \"bytes\", \"split_mode\": \"everything\"}], \"axis_position\": \"left\", \"axis_scale\": \"normal\", \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"gauge_color_rules\": [{\"id\": \"c82f80c0-b9e0-11e9-8604-efdef550e653\"}], \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"gauge_inner_width\": 10, \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\"}, \"title\": \"Cluster HDD Usage [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "f515f2e0-b9e0-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-09T10:00:12.389Z",
+            "version": "WzEwMTUsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Cluster RAM [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"bar_color_rules\": [{\"id\": \"3afe8650-b9e1-11e9-861c-7f7211bffe38\"}], \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"24242700-b9e1-11e9-ab98-51a45917a19d\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.cluster.ram.total.bytes\", \"id\": \"24242702-b9e1-11e9-ab98-51a45917a19d\"}], \"point_size\": 0, \"id\": \"24242701-b9e1-11e9-ab98-51a45917a19d\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"Total\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(159,5,0,1)\", \"formatter\": \"bytes\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.cluster.ram.used.value.bytes\", \"id\": \"24242704-b9e1-11e9-ab98-51a45917a19d\"}], \"point_size\": 0, \"id\": \"24242703-b9e1-11e9-ab98-51a45917a19d\", \"fill\": \"0.2\", \"separate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"Used\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(226,115,0,1)\", \"formatter\": \"bytes\", \"split_mode\": \"everything\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Cluster RAM [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "7cc8def0-b9e1-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-09T09:59:56.912Z",
+            "version": "WzEwMDUsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Bucket Item Count [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"5b94e6a0-b9f2-11e9-9c08-535482acfc9e\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.bucket.item_count\", \"id\": \"5b94e6a2-b9f2-11e9-9c08-535482acfc9e\"}], \"point_size\": 0, \"id\": \"5b94e6a1-b9f2-11e9-9c08-535482acfc9e\", \"fill\": \"0.1\", \"terms_order_by\": \"5b94e6a2-b9f2-11e9-9c08-535482acfc9e\", \"separate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"items\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(252,196,0,1)\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"couchbase.bucket.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Bucket Item Count [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "97ee1ea0-b9f2-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-09T09:58:47.462Z",
+            "version": "Wzk4MCwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Document Replicas [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"2658bfa0-b9f4-11e9-ac89-cd269ee83e5f\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.node.vb_replica_curr_items\", \"id\": \"2658bfa2-b9f4-11e9-ac89-cd269ee83e5f\"}], \"point_size\": 0, \"id\": \"2658bfa1-b9f4-11e9-ac89-cd269ee83e5f\", \"fill\": \"0.2\", \"separate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"replicas\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#3185FC\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"couchbase.node.hostname\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Document Replicas [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "63efced0-b9f4-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-09T10:01:57.445Z",
+            "version": "WzEwNDgsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Disk space used by docs [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"46d25240-ba8b-11e9-a06c-c5fca4bfd53b\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.node.couch.docs.disk_size.bytes\", \"id\": \"46d25242-ba8b-11e9-a06c-c5fca4bfd53b\"}], \"point_size\": 0, \"id\": \"46d25241-ba8b-11e9-a06c-c5fca4bfd53b\", \"fill\": \"0.1\", \"separate_axis\": 0, \"line_width\": \"1\", \"stacked\": \"none\", \"chart_type\": \"line\", \"label\": \"Docs \", \"value_template\": \"{{value}}\", \"split_color_mode\": \"gradient\", \"axis_position\": \"right\", \"color\": \"rgba(83,167,131,1)\", \"formatter\": \"bytes\", \"split_mode\": \"terms\", \"terms_field\": \"couchbase.node.hostname\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Disk space used by docs [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "99980c90-ba8b-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-09T10:15:08.388Z",
+            "version": "WzEwNzMsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Disk Fetches [Metricbeat Couchbase] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"type\": \"timeseries\", \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"id\": \"ead970d0-ba8b-11e9-8d1e-992a5619d7be\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"couchbase.bucket.disk.fetches\", \"id\": \"ead970d2-ba8b-11e9-8d1e-992a5619d7be\"}], \"point_size\": 0, \"id\": \"ead970d1-ba8b-11e9-8d1e-992a5619d7be\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"Disk Fetches\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(176,188,0,1)\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"couchbase.bucket.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Disk Fetches [Metricbeat Couchbase] ECS\"}"
+            },
+            "id": "19eed0e0-ba8c-11e9-a579-f5c0a5d81340",
+            "migrationVersion": {
+                "visualization": "7.3.0"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-08-09T09:57:30.478Z",
+            "version": "Wzk2NSwxXQ=="
+        }
+    ],
+    "version": "7.3.0"
+}

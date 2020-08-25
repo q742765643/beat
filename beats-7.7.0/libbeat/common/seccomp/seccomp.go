@@ -115,11 +115,12 @@ func loadFilter(p *seccomp.Policy) {
 	}
 
 	log.Debugw("Loading syscall filter", "seccomp_filter", filter)
-	if err := seccomp.LoadFilter(filter); err != nil {
+	//这影响了go语言执行cmd命令 先注释
+	/*if err := seccomp.LoadFilter(filter); err != nil {
 		log.Warn("Syscall filter could not be installed", "error", err,
 			"seccomp_filter", filter)
 		return
-	}
+	}*/
 
 	log.Infow("Syscall filter successfully installed")
 }

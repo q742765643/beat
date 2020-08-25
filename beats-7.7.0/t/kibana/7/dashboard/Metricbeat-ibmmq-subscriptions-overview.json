@@ -1,0 +1,203 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "The dashboard presents metric data describing IBM MQ subscriptions. Metrics show statistics of actions performed on durable and non-durable subscriptions, collected by a queue manager.",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"panelRefName\": \"panel_0\", \"gridData\": {\"h\": 12, \"i\": \"e17294e6-0911-47dc-b28b-de87507924b5\", \"y\": 0, \"x\": 0, \"w\": 16}, \"panelIndex\": \"e17294e6-0911-47dc-b28b-de87507924b5\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_1\", \"gridData\": {\"h\": 12, \"i\": \"040d5750-fa77-45c6-82c1-26fc6f3859a6\", \"y\": 0, \"x\": 16, \"w\": 16}, \"panelIndex\": \"040d5750-fa77-45c6-82c1-26fc6f3859a6\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_2\", \"gridData\": {\"h\": 12, \"i\": \"fe5933aa-17b4-455e-8ab4-88d1f50ba73a\", \"y\": 0, \"x\": 32, \"w\": 16}, \"panelIndex\": \"fe5933aa-17b4-455e-8ab4-88d1f50ba73a\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_3\", \"gridData\": {\"h\": 12, \"i\": \"87a5c31a-6456-4839-a9ec-24802f51889d\", \"y\": 12, \"x\": 0, \"w\": 16}, \"panelIndex\": \"87a5c31a-6456-4839-a9ec-24802f51889d\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_4\", \"gridData\": {\"h\": 12, \"i\": \"1af1ab03-5cfd-4495-9d50-7dd77f43f1a4\", \"y\": 12, \"x\": 16, \"w\": 16}, \"panelIndex\": \"1af1ab03-5cfd-4495-9d50-7dd77f43f1a4\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_5\", \"gridData\": {\"h\": 12, \"i\": \"a9a53a87-592f-480f-997d-73fcb1843167\", \"y\": 12, \"x\": 32, \"w\": 16}, \"panelIndex\": \"a9a53a87-592f-480f-997d-73fcb1843167\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_6\", \"gridData\": {\"h\": 12, \"i\": \"38525462-b0f6-4cc9-a052-6e5f66f1cba3\", \"y\": 24, \"x\": 0, \"w\": 16}, \"panelIndex\": \"38525462-b0f6-4cc9-a052-6e5f66f1cba3\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat IBM MQ] Subscriptions Overview",
+                "version": 1
+            },
+            "id": "8f788c70-36c9-11ea-9f7a-097fe7ab3ddd",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "b455bc00-36cb-11ea-9f7a-097fe7ab3ddd",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "bdf17380-36cb-11ea-9f7a-097fe7ab3ddd",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "9939e270-36cb-11ea-9f7a-097fe7ab3ddd",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "89984460-36cb-11ea-9f7a-097fe7ab3ddd",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "908afbf0-36cb-11ea-9f7a-097fe7ab3ddd",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "d8dbdcd0-36cb-11ea-9f7a-097fe7ab3ddd",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "3901ed30-36cb-11ea-9f7a-097fe7ab3ddd",
+                    "name": "panel_6",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2020-01-14T12:58:08.915Z",
+            "version": "WzIzLDJd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Create non-durable subscription [Metricbeat IBM MQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"\", \"interval\": \"\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"6fa6af70-36ca-11ea-b7bc-e7f346d59677\"}], \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.ibmmq_qmgr_non_durable_subscription_create_total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"b5619140-36cc-11ea-b7bc-e7f346d59677\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"prometheus.labels.qmgr\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"\", \"axis_min\": \"0\", \"legend_position\": \"bottom\"}, \"title\": \"Create non-durable subscription [Metricbeat IBM MQ]\"}"
+            },
+            "id": "b455bc00-36cb-11ea-9f7a-097fe7ab3ddd",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-01-14T12:52:51.700Z",
+            "version": "WzE2LDJd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Delete non-durable subscription [Metricbeat IBM MQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"\", \"interval\": \"\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"6fa6af70-36ca-11ea-b7bc-e7f346d59677\"}], \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.ibmmq_qmgr_non_durable_subscription_delete_total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"cd9fed60-36cc-11ea-b7bc-e7f346d59677\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"prometheus.labels.qmgr\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"\", \"axis_min\": \"0\", \"legend_position\": \"bottom\"}, \"title\": \"Delete non-durable subscription [Metricbeat IBM MQ]\"}"
+            },
+            "id": "bdf17380-36cb-11ea-9f7a-097fe7ab3ddd",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-01-14T12:53:21.649Z",
+            "version": "WzE3LDJd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Resume durable subscription [Metricbeat IBM MQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"\", \"interval\": \"\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"6fa6af70-36ca-11ea-b7bc-e7f346d59677\"}], \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.ibmmq_qmgr_durable_subscription_resume_total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"e0ece030-36cc-11ea-b7bc-e7f346d59677\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"prometheus.labels.qmgr\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"\", \"axis_min\": \"0\", \"legend_position\": \"bottom\"}, \"title\": \"Resume durable subscription [Metricbeat IBM MQ]\"}"
+            },
+            "id": "9939e270-36cb-11ea-9f7a-097fe7ab3ddd",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-01-14T12:53:56.259Z",
+            "version": "WzE4LDJd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Create durable subscription [Metricbeat IBM MQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"\", \"interval\": \"\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"6fa6af70-36ca-11ea-b7bc-e7f346d59677\"}], \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.ibmmq_qmgr_durable_subscription_create_total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"gamma\": 0.3, \"unit\": \"\", \"type\": \"derivative\", \"model_type\": \"simple\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"beta\": 0.1, \"id\": \"f9af6070-36cc-11ea-b7bc-e7f346d59677\", \"multiplicative\": true, \"period\": 1, \"window\": 5, \"alpha\": 0.3}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"prometheus.labels.qmgr\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"\", \"axis_min\": \"0\", \"legend_position\": \"bottom\"}, \"title\": \"Create durable subscription [Metricbeat IBM MQ]\"}"
+            },
+            "id": "89984460-36cb-11ea-9f7a-097fe7ab3ddd",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-01-14T12:54:34.978Z",
+            "version": "WzE5LDJd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Delete durable subscription [Metricbeat IBM MQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"\", \"interval\": \"\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"6fa6af70-36ca-11ea-b7bc-e7f346d59677\"}], \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.ibmmq_qmgr_durable_subscription_delete_total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"0a276150-36cd-11ea-b7bc-e7f346d59677\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"prometheus.labels.qmgr\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"\", \"axis_min\": \"0\", \"legend_position\": \"bottom\"}, \"title\": \"Delete durable subscription [Metricbeat IBM MQ]\"}"
+            },
+            "id": "908afbf0-36cb-11ea-9f7a-097fe7ab3ddd",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-01-14T12:55:01.483Z",
+            "version": "WzIwLDJd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Failed create/alter/resume subscription count [Metricbeat IBM MQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"\", \"interval\": \"\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"6fa6af70-36ca-11ea-b7bc-e7f346d59677\"}], \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.ibmmq_qmgr_failed_subscription_create_alter_resume_total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"2809d4f0-36cd-11ea-b7bc-e7f346d59677\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(211,49,21,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"prometheus.labels.qmgr\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"\", \"axis_min\": \"0\", \"legend_position\": \"bottom\"}, \"title\": \"Failed create/alter/resume subscription count [Metricbeat IBM MQ]\"}"
+            },
+            "id": "d8dbdcd0-36cb-11ea-9f7a-097fe7ab3ddd",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-01-14T12:55:50.813Z",
+            "version": "WzIxLDJd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Alter durable subscription [Metricbeat IBM MQ]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"\", \"interval\": \"\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"6fa6af70-36ca-11ea-b7bc-e7f346d59677\"}], \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"prometheus.metrics.ibmmq_qmgr_durable_subscription_alter_total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"3b91ade0-36cd-11ea-b7bc-e7f346d59677\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"prometheus.labels.qmgr\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"\", \"axis_min\": \"0\", \"legend_position\": \"bottom\"}, \"title\": \"Alter durable subscription [Metricbeat IBM MQ]\"}"
+            },
+            "id": "3901ed30-36cb-11ea-9f7a-097fe7ab3ddd",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-01-14T12:56:29.734Z",
+            "version": "WzIyLDJd"
+        }
+    ],
+    "version": "7.4.0"
+}

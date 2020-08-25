@@ -1,0 +1,269 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "This dashboard visualized relevant metrics for VMs running on Azure cloud.",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"panelRefName\": \"panel_0\", \"gridData\": {\"h\": 12, \"i\": \"aa881f9d-28d3-4722-822e-3e670021cf52\", \"y\": 0, \"x\": 0, \"w\": 6}, \"panelIndex\": \"aa881f9d-28d3-4722-822e-3e670021cf52\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"e673f70c-f811-4290-9087-578c7dd13675\", \"panelRefName\": \"panel_1\", \"gridData\": {\"h\": 12, \"i\": \"e673f70c-f811-4290-9087-578c7dd13675\", \"y\": 0, \"x\": 6, \"w\": 20}, \"title\": \"VM CPU Utilization\", \"version\": \"7.4.0\", \"embeddableConfig\": {\"title\": \"VM CPU Utilization\"}}, {\"panelIndex\": \"2473ef72-c56c-4783-a36a-f4b8efd66ab7\", \"panelRefName\": \"panel_2\", \"gridData\": {\"h\": 12, \"i\": \"2473ef72-c56c-4783-a36a-f4b8efd66ab7\", \"y\": 0, \"x\": 26, \"w\": 22}, \"title\": \"VM Available Memory\", \"version\": \"7.4.0\", \"embeddableConfig\": {\"title\": \"VM Available Memory\"}}, {\"panelRefName\": \"panel_3\", \"gridData\": {\"h\": 12, \"i\": \"14e225ef-6417-4377-b2cb-6b46b6693b78\", \"y\": 12, \"x\": 36, \"w\": 12}, \"panelIndex\": \"14e225ef-6417-4377-b2cb-6b46b6693b78\", \"version\": \"7.4.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"535d70b3-3f3c-4a84-85ba-ab671b6d144f\", \"panelRefName\": \"panel_4\", \"gridData\": {\"h\": 12, \"i\": \"535d70b3-3f3c-4a84-85ba-ab671b6d144f\", \"y\": 12, \"x\": 0, \"w\": 12}, \"title\": \"VM Network In Total\", \"version\": \"7.4.0\", \"embeddableConfig\": {\"title\": \"VM Network In Total\"}}, {\"panelIndex\": \"6903a45e-bf11-4db2-9497-fd9692e83448\", \"panelRefName\": \"panel_5\", \"gridData\": {\"h\": 12, \"i\": \"6903a45e-bf11-4db2-9497-fd9692e83448\", \"y\": 12, \"x\": 12, \"w\": 12}, \"title\": \"VM Network Out Total\", \"version\": \"7.4.0\", \"embeddableConfig\": {\"title\": \"VM Network Out Total\"}}, {\"panelIndex\": \"aa57fa8f-f6ea-45e3-9b2c-ba948d625813\", \"panelRefName\": \"panel_6\", \"gridData\": {\"h\": 12, \"i\": \"aa57fa8f-f6ea-45e3-9b2c-ba948d625813\", \"y\": 12, \"x\": 24, \"w\": 12}, \"title\": \"VM Disk Writes\", \"version\": \"7.4.0\", \"embeddableConfig\": {\"title\": \"VM Disk Writes\"}}, {\"panelIndex\": \"8879143b-ed83-45ec-8c58-b10dc1597c22\", \"panelRefName\": \"panel_7\", \"gridData\": {\"h\": 13, \"i\": \"8879143b-ed83-45ec-8c58-b10dc1597c22\", \"y\": 24, \"x\": 0, \"w\": 24}, \"title\": \"VM Disk Read Operations/s\", \"version\": \"7.4.0\", \"embeddableConfig\": {\"title\": \"VM Disk Read Operations/s\"}}, {\"panelIndex\": \"4071f2bf-1794-45ff-b76d-58864226d8b7\", \"panelRefName\": \"panel_8\", \"gridData\": {\"h\": 13, \"i\": \"4071f2bf-1794-45ff-b76d-58864226d8b7\", \"y\": 24, \"x\": 24, \"w\": 24}, \"title\": \"VM Disk Write Operations/s\", \"version\": \"7.4.0\", \"embeddableConfig\": {\"title\": \"VM Disk Write Operations/s\"}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Azure] Compute VMs Overview",
+                "version": 1
+            },
+            "id": "eb3f05f0-ea9a-11e9-90ec-112a988266d5",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "5031b220-eb61-11e9-90ec-112a988266d5",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "db9a3490-ea8f-11e9-90ec-112a988266d5",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "7205a4f0-ea95-11e9-90ec-112a988266d5",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "e8ca65c0-eb45-11e9-90ec-112a988266d5",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "8b6b9450-ea99-11e9-90ec-112a988266d5",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "abd32c30-ea99-11e9-90ec-112a988266d5",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "5c016810-ea9a-11e9-90ec-112a988266d5",
+                    "name": "panel_6",
+                    "type": "visualization"
+                },
+                {
+                    "id": "3a50e950-eb46-11e9-90ec-112a988266d5",
+                    "name": "panel_7",
+                    "type": "visualization"
+                },
+                {
+                    "id": "0892eaa0-ea9a-11e9-90ec-112a988266d5",
+                    "name": "panel_8",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-10-15T11:53:03.300Z",
+            "version": "WzMxOTAsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "VM Filters [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"input_control_vis\", \"params\": {\"updateFiltersOnChange\": true, \"pinFilters\": false, \"controls\": [{\"label\": \"Region\", \"fieldName\": \"cloud.region\", \"id\": \"1549397251041\", \"parent\": \"\", \"indexPatternRefName\": \"control_0_index_pattern\", \"type\": \"list\", \"options\": {\"size\": 5, \"type\": \"terms\", \"multiselect\": true, \"dynamicOptions\": true, \"order\": \"desc\"}}, {\"label\": \"Resource Group\", \"fieldName\": \"azure.resource.group\", \"id\": \"1549512142947\", \"parent\": \"\", \"indexPatternRefName\": \"control_1_index_pattern\", \"type\": \"list\", \"options\": {\"size\": 5, \"type\": \"terms\", \"multiselect\": true, \"dynamicOptions\": true, \"order\": \"desc\"}}, {\"label\": \"VM Name\", \"fieldName\": \"cloud.instance.name\", \"id\": \"1570774891724\", \"parent\": \"\", \"indexPatternRefName\": \"control_2_index_pattern\", \"type\": \"list\", \"options\": {\"size\": 5, \"type\": \"terms\", \"multiselect\": true, \"dynamicOptions\": true, \"order\": \"desc\"}}], \"useTimeFilter\": false}, \"title\": \"VM Filters [Metricbeat Azure]\"}"
+            },
+            "id": "5031b220-eb61-11e9-90ec-112a988266d5",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_0_index_pattern",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_1_index_pattern",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_2_index_pattern",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-10-11T06:35:45.645Z",
+            "version": "WzE0ODMsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "VM CPU Utilization [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"4f6c1610-ea8e-11e9-8c73-71740bcf3d8b\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.compute_vm.percentage_cpu.avg\", \"id\": \"4f6c1612-ea8e-11e9-8c73-71740bcf3d8b\"}], \"point_size\": 0, \"id\": \"4f6c1611-ea8e-11e9-8c73-71740bcf3d8b\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"stacked\": \"none\", \"chart_type\": \"line\", \"label\": \"Azure VM CPU Utilization\", \"value_template\": \"{{value}}%\", \"split_color_mode\": \"rainbow\", \"axis_position\": \"right\", \"filter\": {\"language\": \"kuery\", \"query\": \"\"}, \"color\": \"rgba(252,196,0,1)\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type : \\\"Microsoft.Compute/virtualMachines\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\", \"axis_min\": 0}, \"title\": \"VM CPU Utilization [Metricbeat Azure]\"}"
+            },
+            "id": "db9a3490-ea8f-11e9-90ec-112a988266d5",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-10-15T11:52:01.637Z",
+            "version": "WzMxODQsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "VM Available Memory [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"c7e12030-ea94-11e9-bf06-bfc27258c9ad\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.compute_vm.memory_available_bytes.avg\", \"id\": \"c7e12032-ea94-11e9-bf06-bfc27258c9ad\"}], \"point_size\": 0, \"id\": \"c7e12031-ea94-11e9-bf06-bfc27258c9ad\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"VM Available Memory\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(176,188,0,1)\", \"formatter\": \"bytes\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type : \\\"Microsoft.Compute/virtualMachines\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\", \"axis_min\": 0}, \"title\": \"VM Available Memory [Metricbeat Azure]\"}"
+            },
+            "id": "7205a4f0-ea95-11e9-90ec-112a988266d5",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-10-15T11:52:22.085Z",
+            "version": "WzMxODYsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "VM Disk Reads [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"39b6adc0-ea99-11e9-8328-799c817fb96b\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.compute_vm.disk_read_bytes.total\", \"id\": \"39b6adc2-ea99-11e9-8328-799c817fb96b\"}], \"point_size\": 0, \"id\": \"39b6adc1-ea99-11e9-8328-799c817fb96b\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"VM Disk Read bytes\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(252,196,0,1)\", \"formatter\": \"bytes\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type :\\\"Microsoft.Compute/virtualMachines\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\", \"axis_min\": 0}, \"title\": \"VM Disk Reads [Metricbeat Azure]\"}"
+            },
+            "id": "e8ca65c0-eb45-11e9-90ec-112a988266d5",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-10-15T11:50:30.820Z",
+            "version": "WzMxNzgsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "VM Network In Total [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"39b6adc0-ea99-11e9-8328-799c817fb96b\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.compute_vm.network_in_total.total\", \"id\": \"39b6adc2-ea99-11e9-8328-799c817fb96b\"}], \"point_size\": 0, \"id\": \"39b6adc1-ea99-11e9-8328-799c817fb96b\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"Azure VM Network In Total\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(104,204,202,1)\", \"formatter\": \"bytes\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type : \\\"Microsoft.Compute/virtualMachines\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\", \"axis_min\": 0}, \"title\": \"VM Network In Total [Metricbeat Azure]\"}"
+            },
+            "id": "8b6b9450-ea99-11e9-90ec-112a988266d5",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-10-15T11:52:40.578Z",
+            "version": "WzMxODgsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "VM Network Out Total [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"39b6adc0-ea99-11e9-8328-799c817fb96b\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.compute_vm.network_out_total.total\", \"id\": \"39b6adc2-ea99-11e9-8328-799c817fb96b\"}], \"point_size\": 0, \"id\": \"39b6adc1-ea99-11e9-8328-799c817fb96b\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"Azure VM Network Out Total\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(115,216,255,1)\", \"formatter\": \"bytes\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type : \\\"Microsoft.Compute/virtualMachines\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\", \"axis_min\": 0}, \"title\": \"VM Network Out Total [Metricbeat Azure]\"}"
+            },
+            "id": "abd32c30-ea99-11e9-90ec-112a988266d5",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-10-15T11:49:45.582Z",
+            "version": "WzMxNzQsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "VM Disk Writes [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"39b6adc0-ea99-11e9-8328-799c817fb96b\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.compute_vm.disk_write_bytes.total\", \"id\": \"39b6adc2-ea99-11e9-8328-799c817fb96b\"}], \"point_size\": 0, \"id\": \"39b6adc1-ea99-11e9-8328-799c817fb96b\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"VM Disk Writes bytes\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(176,188,0,1)\", \"formatter\": \"bytes\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type :\\\"Microsoft.Compute/virtualMachines\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\", \"axis_min\": 0}, \"title\": \"VM Disk Writes [Metricbeat Azure]\"}"
+            },
+            "id": "5c016810-ea9a-11e9-90ec-112a988266d5",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-10-15T11:50:07.876Z",
+            "version": "WzMxNzYsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "VM Disk Read Operations/s [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"39b6adc0-ea99-11e9-8328-799c817fb96b\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.compute_vm.disk_read_operations_per_sec.avg\", \"id\": \"39b6adc2-ea99-11e9-8328-799c817fb96b\"}], \"point_size\": 0, \"id\": \"39b6adc1-ea99-11e9-8328-799c817fb96b\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"VM Disk Read Operations/s\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(252,196,0,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type : \\\"Microsoft.Compute/virtualMachines\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\", \"axis_min\": 0}, \"title\": \"VM Disk Read Operations/s [Metricbeat Azure]\"}"
+            },
+            "id": "3a50e950-eb46-11e9-90ec-112a988266d5",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-10-15T11:50:55.337Z",
+            "version": "WzMxODAsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "VM Disk Write Operations/s [Metricbeat Azure]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"interval\": \">=5m\", \"default_timefield\": \"@timestamp\", \"id\": \"39b6adc0-ea99-11e9-8328-799c817fb96b\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"azure.compute_vm.disk_write_operations_per_sec.avg\", \"id\": \"39b6adc2-ea99-11e9-8328-799c817fb96b\"}], \"point_size\": 0, \"id\": \"39b6adc1-ea99-11e9-8328-799c817fb96b\", \"fill\": 0, \"separate_axis\": 0, \"line_width\": 2, \"chart_type\": \"line\", \"label\": \"VM Disk Write Operations/s\", \"value_template\": \"{{value}}\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(252,196,0,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"cloud.instance.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"kuery\", \"query\": \"azure.resource.type : \\\"Microsoft.Compute/virtualMachines\\\" \"}, \"type\": \"timeseries\", \"index_pattern\": \"metricbeat-*\", \"axis_min\": 0}, \"title\": \"VM Disk Write Operations/s [Metricbeat Azure]\"}"
+            },
+            "id": "0892eaa0-ea9a-11e9-90ec-112a988266d5",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-10-15T11:51:33.545Z",
+            "version": "WzMxODIsMV0="
+        }
+    ],
+    "version": "7.4.0"
+}

@@ -1,0 +1,78 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Metrics for STAN channels / subjects",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"panelRefName\": \"panel_0\", \"gridData\": {\"h\": 15, \"i\": \"98c9a793-903a-47af-900b-8becd2493d0a\", \"y\": 0, \"x\": 24, \"w\": 24}, \"panelIndex\": \"98c9a793-903a-47af-900b-8becd2493d0a\", \"version\": \"7.5.2\", \"embeddableConfig\": {}}, {\"panelRefName\": \"panel_1\", \"gridData\": {\"h\": 15, \"i\": \"d11727cf-8d05-45ae-9ae0-2f3b79ab7eda\", \"y\": 0, \"x\": 0, \"w\": 24}, \"panelIndex\": \"d11727cf-8d05-45ae-9ae0-2f3b79ab7eda\", \"version\": \"7.5.2\", \"embeddableConfig\": {}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Stan] Channel Overview Metrics",
+                "version": 1
+            },
+            "id": "b6a60340-4371-11ea-b0c6-cb14c0977bd1",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "46a07ac0-436d-11ea-b0c6-cb14c0977bd1",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "0e412fe0-4371-11ea-b0c6-cb14c0977bd1",
+                    "name": "panel_1",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2020-01-30T15:03:46.292Z",
+            "version": "WzI0MTMsMV0="
+        },
+        {
+            "attributes": {
+                "description": "Number of messages in each channel / subject",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Channel Messages [Metricbeat Stan]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"\", \"interval\": \"\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"stan.channels.messages\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"bar\", \"label\": \"STAN Queue Messages\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"stan.channels.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"\"}, \"title\": \"Channel Messages [Metricbeat Stan]\"}"
+            },
+            "id": "46a07ac0-436d-11ea-b0c6-cb14c0977bd1",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-01-30T15:01:38.606Z",
+            "version": "WzI0MDcsMV0="
+        },
+        {
+            "attributes": {
+                "description": "Queue depth of STAN channels, summed per channel",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Channel Queue Depth [Metricbeat Stan]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"\", \"interval\": \"\", \"default_timefield\": \"@timestamp\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"stan.channels.depth\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"separate_axis\": 0, \"line_width\": 1, \"chart_type\": \"bar\", \"label\": \"Queue Depth\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"stan.channels.name\"}], \"axis_scale\": \"normal\", \"show_legend\": 1, \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"index_pattern\": \"\"}, \"title\": \"Channel Queue Depth [Metricbeat Stan]\"}"
+            },
+            "id": "0e412fe0-4371-11ea-b0c6-cb14c0977bd1",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2020-01-30T15:02:01.289Z",
+            "version": "WzI0MDgsMV0="
+        }
+    ],
+    "version": "7.5.2"
+}

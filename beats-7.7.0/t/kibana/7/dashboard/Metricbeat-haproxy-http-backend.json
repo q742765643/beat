@@ -1,0 +1,23 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "HAProxy HTTP backend metrics",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"highlightAll\": true, \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"version\": true, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"darkTheme\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"1\", \"y\": 5, \"x\": 0, \"w\": 4}, \"panelIndex\": \"1\", \"version\": \"6.2.2\", \"id\": \"a64b4fd0-471c-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"2\", \"y\": 0, \"x\": 9, \"w\": 3}, \"panelIndex\": \"2\", \"version\": \"6.2.2\", \"id\": \"794b6cd0-471d-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 3, \"i\": \"3\", \"y\": 2, \"x\": 6, \"w\": 6}, \"panelIndex\": \"3\", \"version\": \"6.2.2\", \"id\": \"bb0ab500-4735-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"4\", \"y\": 0, \"x\": 6, \"w\": 3}, \"panelIndex\": \"4\", \"version\": \"6.2.2\", \"id\": \"40bed190-473b-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"5\", \"y\": 5, \"x\": 4, \"w\": 4}, \"panelIndex\": \"5\", \"version\": \"6.2.2\", \"id\": \"0751ed00-479c-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"6\", \"y\": 5, \"x\": 8, \"w\": 4}, \"panelIndex\": \"6\", \"version\": \"6.2.2\", \"id\": \"b3463670-47a1-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 3, \"i\": \"7\", \"y\": 0, \"x\": 0, \"w\": 6}, \"panelIndex\": \"7\", \"version\": \"6.2.2\", \"id\": \"fcbdfa60-47bd-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"8\", \"y\": 3, \"x\": 0, \"w\": 6}, \"panelIndex\": \"8\", \"version\": \"6.2.2\", \"id\": \"981d1040-47be-11e8-bc13-1397384faad3-ecs\"}]",
+                "timeRestore": false,
+                "title": "[Metricbeat HAProxy] HTTP backend ECS",
+                "version": 1
+            },
+            "id": "0836a4b0-47bd-11e8-bc13-1397384faad3-ecs",
+            "type": "dashboard",
+            "updated_at": "2018-04-24T18:33:28.791Z",
+            "version": 6
+        }
+    ],
+    "version": "6.2.2"
+}

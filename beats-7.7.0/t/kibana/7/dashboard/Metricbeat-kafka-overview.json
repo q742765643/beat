@@ -1,0 +1,297 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Kafka analysis of topics and consumer groups",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"highlightAll\": true, \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"version\": true, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"darkTheme\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"panelIndex\": \"1\", \"panelRefName\": \"panel_0\", \"gridData\": {\"h\": 13, \"i\": \"1\", \"y\": 20, \"x\": 0, \"w\": 24}, \"title\": \"Kafka Topic & Consumer Offsets\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"3\", \"panelRefName\": \"panel_1\", \"gridData\": {\"h\": 6, \"i\": \"3\", \"y\": 0, \"x\": 0, \"w\": 16}, \"title\": \"Kafka Controls\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"6\", \"panelRefName\": \"panel_2\", \"gridData\": {\"h\": 14, \"i\": \"6\", \"y\": 6, \"x\": 0, \"w\": 24}, \"title\": \"Consumer Group Lag by Topic\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"10\", \"panelRefName\": \"panel_3\", \"gridData\": {\"h\": 6, \"i\": \"10\", \"y\": 0, \"x\": 16, \"w\": 25}, \"title\": \"Kafka Metrics\", \"version\": \"7.3.0\", \"embeddableConfig\": {\"spy\": null}}, {\"panelIndex\": \"12\", \"panelRefName\": \"panel_4\", \"gridData\": {\"h\": 7, \"i\": \"12\", \"y\": 33, \"x\": 0, \"w\": 24}, \"title\": \"Consumer Partition Reassignments\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"13\", \"panelRefName\": \"panel_5\", \"gridData\": {\"h\": 6, \"i\": \"13\", \"y\": 0, \"x\": 41, \"w\": 7}, \"title\": \"Consumer Metrics\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"14\", \"panelRefName\": \"panel_6\", \"gridData\": {\"h\": 13, \"i\": \"14\", \"y\": 27, \"x\": 24, \"w\": 24}, \"title\": \"Kafka Consumer Group Clients\", \"version\": \"7.3.0\", \"embeddableConfig\": {\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}, \"spy\": null}}, {\"panelIndex\": \"15\", \"panelRefName\": \"panel_7\", \"gridData\": {\"h\": 10, \"i\": \"15\", \"y\": 6, \"x\": 24, \"w\": 24}, \"title\": \"Kafka Brokers\", \"version\": \"7.3.0\", \"embeddableConfig\": {}}, {\"panelIndex\": \"16\", \"panelRefName\": \"panel_8\", \"gridData\": {\"h\": 11, \"i\": \"16\", \"y\": 16, \"x\": 24, \"w\": 24}, \"title\": \"Kafka Topic Details\", \"version\": \"7.3.0\", \"embeddableConfig\": {\"table\": {\"sort\": {\"column\": \"26d2cd90-d2f5-11e8-9dd4-c5f03280d7b0\", \"order\": \"desc\"}}}}]",
+                "timeRestore": false,
+                "title": "[Metricbeat Kafka] Overview ECS",
+                "version": 1
+            },
+            "id": "ea488d90-8e63-11e8-8fa2-3d5f811fbd0f-ecs",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "b9d12c80-8e63-11e8-8fa2-3d5f811fbd0f-ecs",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "8d2f79a0-8e65-11e8-8fa2-3d5f811fbd0f-ecs",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "944188f0-8e79-11e8-8fa2-3d5f811fbd0f-ecs",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "dc89f8d0-8e8e-11e8-8fa2-3d5f811fbd0f-ecs",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "587f2360-8f21-11e8-8fa2-3d5f811fbd0f-ecs",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "1681f1a0-90e7-11e8-8fa2-3d5f811fbd0f-ecs",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "9a7576e0-d231-11e8-8766-dbbdc39e7ba9-ecs",
+                    "name": "panel_6",
+                    "type": "visualization"
+                },
+                {
+                    "id": "27dd5960-d2ed-11e8-8766-dbbdc39e7ba9-ecs",
+                    "name": "panel_7",
+                    "type": "visualization"
+                },
+                {
+                    "id": "491fee50-d2f5-11e8-8766-dbbdc39e7ba9-ecs",
+                    "name": "panel_8",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-11-29T09:36:17.646Z",
+            "version": "WzI2NDgsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Kafka Topic & Consumer Offsets [Metricbeat Kafka] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"background_color_rules\": [{\"id\": \"8b27e6a0-8e61-11e8-b741-c3e458b74a68\"}], \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"kafka.partition.offset.newest\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": \"0\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0.1\", \"seperate_axis\": 0, \"terms_order_by\": \"_term\", \"line_width\": \"0.5\", \"stacked\": \"none\", \"chart_type\": \"bar\", \"label\": \"Topic Offsets\", \"value_template\": \"{{value}}\", \"split_color_mode\": \"rainbow\", \"axis_position\": \"right\", \"filter\": {\"language\": \"lucene\", \"query\": \"metricset.name: partition AND kafka.partition.partition.is_leader: true\"}, \"color\": \"rgba(244,78,59,1)\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"kafka.topic.name\"}, {\"metrics\": [{\"type\": \"sum\", \"field\": \"kafka.consumergroup.offset\", \"id\": \"d43034c1-8f1e-11e8-8784-cd0acd161a28\"}], \"point_size\": \"1.5\", \"id\": \"d43034c0-8f1e-11e8-8784-cd0acd161a28\", \"fill\": \"0\", \"seperate_axis\": 0, \"terms_order_by\": \"_term\", \"line_width\": \"1\", \"stacked\": \"none\", \"chart_type\": \"line\", \"label\": \"Consumer Offsets\", \"split_filters\": [{\"color\": \"#68BC00\", \"id\": \"dd41ada0-8f1e-11e8-8784-cd0acd161a28\"}], \"value_template\": \"{{value}}\", \"split_color_mode\": \"rainbow\", \"axis_position\": \"right\", \"filter\": {\"language\": \"lucene\", \"query\": \"metricset.name: consumergroup\"}, \"color\": \"rgba(244,78,59,0.52)\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"kafka.consumergroup.id\"}], \"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"lucene\", \"query\": \"NOT kafka.topic.name:__consumer_offsets\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Kafka Topic & Consumer Offsets [Metricbeat Kafka] ECS\"}"
+            },
+            "id": "b9d12c80-8e63-11e8-8fa2-3d5f811fbd0f-ecs",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-29T09:36:17.646Z",
+            "version": "WzI2MzksMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Kafka Controls [Metricbeat Kafka] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"input_control_vis\", \"params\": {\"updateFiltersOnChange\": true, \"pinFilters\": false, \"controls\": [{\"label\": \"Topic Name\", \"fieldName\": \"kafka.topic.name\", \"id\": \"1532342651170\", \"parent\": \"\", \"indexPatternRefName\": \"control_0_index_pattern\", \"type\": \"list\", \"options\": {\"size\": 10, \"type\": \"terms\", \"multiselect\": true, \"order\": \"desc\"}}, {\"label\": \"Partition\", \"fieldName\": \"kafka.partition.id\", \"id\": \"1539799686678\", \"parent\": \"1532342651170\", \"indexPatternRefName\": \"control_1_index_pattern\", \"type\": \"list\", \"options\": {\"size\": 5, \"type\": \"terms\", \"multiselect\": true, \"order\": \"desc\"}}], \"useTimeFilter\": false}, \"title\": \"Kafka Controls [Metricbeat Kafka] ECS\"}"
+            },
+            "id": "8d2f79a0-8e65-11e8-8fa2-3d5f811fbd0f-ecs",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_0_index_pattern",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "control_1_index_pattern",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-11-29T09:36:17.646Z",
+            "version": "WzI2NDAsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "title": "Kafka Consumer Group Lag vs Time [Metricbeat Kafka] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"isModelInvalid\": false, \"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"1dbe6f50-1298-11ea-abd7-b5bb8e05b5d6\"}], \"interval\": \"auto\", \"default_timefield\": \"@timestamp\", \"background_color_rules\": [{\"id\": \"1966adf0-1298-11ea-abd7-b5bb8e05b5d6\"}], \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"kafka.consumergroup.consumer_lag\", \"id\": \"0dcb8021-8e6d-11e8-bfab-6f29bad3a6f2\"}], \"point_size\": \"0\", \"id\": \"0dcb8020-8e6d-11e8-bfab-6f29bad3a6f2\", \"fill\": \"0.2\", \"seperate_axis\": 0, \"line_width\": 1, \"stacked\": \"none\", \"chart_type\": \"line\", \"label\": \"Consumer Groups\", \"split_color_mode\": \"rainbow\", \"axis_position\": \"right\", \"color\": \"rgba(0,156,224,1)\", \"formatter\": \"number\", \"type\": \"timeseries\", \"split_mode\": \"terms\", \"terms_field\": \"kafka.consumergroup.topic\"}], \"axis_position\": \"left\", \"axis_scale\": \"normal\", \"default_index_pattern\": \"metricbeat-*\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"gauge_color_rules\": [{\"id\": \"1eee15b0-1298-11ea-abd7-b5bb8e05b5d6\"}], \"filter\": {\"language\": \"lucene\", \"query\": \"(metricset.name: consumergroup) AND NOT kafka.consumergroup.topic.name:__consumer_offsets\"}, \"gauge_inner_width\": 10, \"type\": \"timeseries\", \"show_legend\": 1, \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\"}, \"title\": \"Kafka Consumer Group Lag vs Time [Metricbeat Kafka] ECS\"}"
+            },
+            "id": "944188f0-8e79-11e8-8fa2-3d5f811fbd0f-ecs",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-29T11:07:58.021Z",
+            "version": "WzI4MjMsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\", \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"meta\": {\"value\": \"partition\", \"disabled\": false, \"params\": {\"query\": \"partition\", \"type\": \"phrase\"}, \"negate\": false, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"alias\": \"Partition Metricset\", \"type\": \"phrase\", \"key\": \"metricset.name\"}, \"query\": {\"match\": {\"metricset.name\": {\"query\": \"partition\", \"type\": \"phrase\"}}}}, {\"$state\": {\"store\": \"appState\"}, \"meta\": {\"value\": \"__consumer_offsets\", \"disabled\": false, \"params\": {\"query\": \"__consumer_offsets\", \"type\": \"phrase\"}, \"negate\": true, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[1].meta.index\", \"alias\": null, \"type\": \"phrase\", \"key\": \"kafka.topic.name\"}, \"query\": {\"match\": {\"kafka.topic.name\": {\"query\": \"__consumer_offsets\", \"type\": \"phrase\"}}}}]}"
+                },
+                "title": "Kafka Metrics [Metricbeat Kafka] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Topics\", \"field\": \"kafka.topic.name\"}, \"type\": \"cardinality\", \"id\": \"1\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Brokers\", \"field\": \"kafka.partition.broker.id\"}, \"type\": \"cardinality\", \"id\": \"3\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Partitions\", \"field\": \"kafka.partition.topic_id\"}, \"type\": \"cardinality\", \"id\": \"5\"}, {\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Replicas\", \"field\": \"kafka.partition.topic_broker_id\"}, \"type\": \"cardinality\", \"id\": \"6\"}], \"type\": \"metric\", \"params\": {\"addTooltip\": true, \"type\": \"metric\", \"addLegend\": false, \"metric\": {\"invertColors\": false, \"style\": {\"labelColor\": false, \"bgColor\": false, \"subText\": \"\", \"bgFill\": \"#000\", \"fontSize\": 32}, \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"labels\": {\"show\": true}, \"metricColorMode\": \"None\"}}, \"title\": \"Kafka Metrics [Metricbeat Kafka] ECS\"}"
+            },
+            "id": "dc89f8d0-8e8e-11e8-8fa2-3d5f811fbd0f-ecs",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[1].meta.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-11-29T09:36:17.646Z",
+            "version": "WzI2NDIsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Consumer Partition Reassignments [Metricbeat Kafka] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"kafka.consumergroup.partition\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"6b69c760-8f20-11e8-8927-d7e991b5b6ab\"}, {\"script\": \"if (params.sum_partition < 0) { return -1 } else if (params.sum_partition > 0) { return 1 }\", \"type\": \"calculation\", \"variables\": [{\"field\": \"6b69c760-8f20-11e8-8927-d7e991b5b6ab\", \"id\": \"99cc2b20-8f20-11e8-8927-d7e991b5b6ab\", \"name\": \"sum_partition\"}], \"id\": \"976f9d80-8f20-11e8-8927-d7e991b5b6ab\"}], \"point_size\": \"20\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0\", \"seperate_axis\": 0, \"line_width\": \"1\", \"split_color_mode\": \"rainbow\", \"chart_type\": \"line\", \"label\": \"Consumer -> Partition Reassignment\", \"value_template\": \"\", \"stacked\": \"none\", \"hide_in_legend\": 0, \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"kafka.consumergroup.id\"}], \"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"axis_min\": \"-1\", \"axis_position\": \"right\", \"filter\": {\"language\": \"lucene\", \"query\": \"NOT kafka.topic.name:__consumer_offsets\"}, \"index_pattern\": \"metricbeat-*\", \"axis_max\": \"1\"}, \"title\": \"Consumer Partition Reassignments [Metricbeat Kafka] ECS\"}"
+            },
+            "id": "587f2360-8f21-11e8-8fa2-3d5f811fbd0f-ecs",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-29T09:36:17.646Z",
+            "version": "WzI2NDMsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\", \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"meta\": {\"value\": \"__consumer_offsets\", \"disabled\": false, \"params\": {\"query\": \"__consumer_offsets\", \"type\": \"phrase\"}, \"negate\": true, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"alias\": null, \"type\": \"phrase\", \"key\": \"kafka.topic.name\"}, \"query\": {\"match\": {\"kafka.topic.name\": {\"query\": \"__consumer_offsets\", \"type\": \"phrase\"}}}}]}"
+                },
+                "title": "Consumer Metrics [Metricbeat Kafka] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Consumer Groups\", \"field\": \"kafka.consumergroup.id\"}, \"type\": \"cardinality\", \"id\": \"1\"}], \"type\": \"metric\", \"params\": {\"addTooltip\": true, \"type\": \"metric\", \"addLegend\": false, \"metric\": {\"invertColors\": false, \"style\": {\"labelColor\": false, \"bgColor\": false, \"subText\": \"\", \"bgFill\": \"#000\", \"fontSize\": 32}, \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"labels\": {\"show\": true}, \"metricColorMode\": \"None\"}}, \"title\": \"Consumer Metrics [Metricbeat Kafka] ECS\"}"
+            },
+            "id": "1681f1a0-90e7-11e8-8fa2-3d5f811fbd0f-ecs",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "metricbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-11-29T09:36:17.646Z",
+            "version": "WzI2NDQsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\", \"filter\": []}"
+                },
+                "title": "Kafka Consumer Group Clients [Metricbeat Kafka] ECS",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"enabled\": true, \"params\": {\"customLabel\": \"Newest Offset\", \"field\": \"kafka.consumergroup.offset\"}, \"type\": \"max\", \"id\": \"1\"}, {\"schema\": \"bucket\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 64, \"customLabel\": \"Consumer group client\", \"field\": \"kafka.consumergroup.client.id\", \"order\": \"desc\", \"otherBucket\": false, \"orderBy\": \"_term\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"2\"}, {\"schema\": \"bucket\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 64, \"customLabel\": \"Topic\", \"field\": \"kafka.topic.name\", \"order\": \"desc\", \"otherBucket\": false, \"orderBy\": \"1\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"3\"}, {\"schema\": \"bucket\", \"enabled\": true, \"params\": {\"missingBucket\": false, \"size\": 256, \"customLabel\": \"Partition\", \"field\": \"kafka.partition.id\", \"order\": \"desc\", \"otherBucket\": false, \"orderBy\": \"1\", \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\"}, \"type\": \"terms\", \"id\": \"4\"}], \"type\": \"table\", \"params\": {\"showMeticsAtAllLevels\": false, \"sort\": {\"direction\": null, \"columnIndex\": null}, \"showPartialRows\": false, \"perPage\": 10, \"showTotal\": false, \"totalFunc\": \"sum\"}, \"title\": \"Kafka Consumer Group Clients [Metricbeat Kafka] ECS\"}"
+            },
+            "id": "9a7576e0-d231-11e8-8766-dbbdc39e7ba9-ecs",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [
+                {
+                    "id": "metricbeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-11-29T09:36:17.646Z",
+            "version": "WzI2NDUsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Kafka Broker Details [Metricbeat Kafka] ECS",
+                "uiStateJSON": "{\"table\": {\"sort\": {\"column\": \"cf09c940-d2ec-11e8-88c8-af5b2a9ee6b2\", \"order\": \"asc\"}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"pivot_id\": \"kafka.partition.partition.replica\", \"bar_color_rules\": [{\"id\": \"7fb31e00-d2ec-11e8-88c8-af5b2a9ee6b2\"}], \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"pivot_label\": \"Broker ID\", \"type\": \"table\", \"series\": [{\"metrics\": [{\"type\": \"cardinality\", \"field\": \"kafka.topic.name\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"terms_size\": \"100\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Topics\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"kafka.broker.id\"}, {\"metrics\": [{\"type\": \"cardinality\", \"field\": \"kafka.partition.topic_id\", \"id\": \"b38eb8b0-d2ec-11e8-88c8-af5b2a9ee6b2\"}], \"point_size\": 1, \"id\": \"b38e91a0-d2ec-11e8-88c8-af5b2a9ee6b2\", \"fill\": 0.5, \"label\": \"Leader Partitions\", \"line_width\": 1, \"chart_type\": \"line\", \"seperate_axis\": 0, \"color_rules\": [{\"id\": \"7e9ee780-d2ef-11e8-9dd4-c5f03280d7b0\"}], \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": {\"language\": \"lucene\", \"query\": \"kafka.partition.partition.is_leader: true\"}, \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"cardinality\", \"field\": \"kafka.partition.topic_broker_id\", \"id\": \"cf09f050-d2ec-11e8-88c8-af5b2a9ee6b2\"}], \"point_size\": 1, \"id\": \"cf09c940-d2ec-11e8-88c8-af5b2a9ee6b2\", \"fill\": 0.5, \"label\": \"Replicas\", \"line_width\": 1, \"chart_type\": \"line\", \"seperate_axis\": 0, \"color_rules\": [{\"id\": \"d4d9d2c0-d2ec-11e8-88c8-af5b2a9ee6b2\"}], \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": \"\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"show_legend\": 1, \"time_field\": \"@timestamp\", \"pivot_rows\": \"256\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": \"\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Kafka Broker Details [Metricbeat Kafka] ECS\"}"
+            },
+            "id": "27dd5960-d2ed-11e8-8766-dbbdc39e7ba9-ecs",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-29T09:36:17.646Z",
+            "version": "WzI2NDYsMV0="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Kafka Topic Details [Metricbeat Kafka] ECS",
+                "uiStateJSON": "{\"table\": {\"sort\": {\"column\": \"_default_\", \"order\": \"asc\"}}}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"pivot_id\": \"kafka.topic.name\", \"bar_color_rules\": [{\"id\": \"f81e47a0-d2f3-11e8-9dd4-c5f03280d7b0\"}], \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"pivot_label\": \"Topic Name\", \"type\": \"table\", \"series\": [{\"metrics\": [{\"type\": \"cardinality\", \"field\": \"kafka.broker.id\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"label\": \"Brokers\", \"line_width\": 1, \"chart_type\": \"line\", \"seperate_axis\": 0, \"color_rules\": [{\"id\": \"f07881d0-d2f5-11e8-95b9-eb9260148efc\"}], \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": {\"language\": \"lucene\", \"query\": \" metricset.name: partition\"}, \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"cardinality\", \"field\": \"kafka.partition.id\", \"id\": \"7d640441-d2f4-11e8-9dd4-c5f03280d7b0\"}], \"point_size\": 1, \"id\": \"7d640440-d2f4-11e8-9dd4-c5f03280d7b0\", \"fill\": 0.5, \"label\": \"Partitions\", \"line_width\": 1, \"chart_type\": \"line\", \"seperate_axis\": 0, \"color_rules\": [{\"id\": \"fb759e10-d2f5-11e8-95b9-eb9260148efc\"}], \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": {\"language\": \"lucene\", \"query\": \" metricset.name: partition\"}, \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"cardinality\", \"field\": \"kafka.partition.topic_broker_id\", \"id\": \"ad26e261-d2f4-11e8-9dd4-c5f03280d7b0\"}], \"point_size\": 1, \"id\": \"ad26e260-d2f4-11e8-9dd4-c5f03280d7b0\", \"fill\": 0.5, \"label\": \"Replicas\", \"line_width\": 1, \"chart_type\": \"line\", \"seperate_axis\": 0, \"color_rules\": [{\"id\": \"fdb1ab60-d2f5-11e8-95b9-eb9260148efc\"}], \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": {\"language\": \"lucene\", \"query\": \" metricset.name: partition\"}, \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"cardinality\", \"field\": \"kafka.consumergroup.client.id\", \"id\": \"26d2cd91-d2f5-11e8-9dd4-c5f03280d7b0\"}], \"point_size\": 1, \"id\": \"26d2cd90-d2f5-11e8-9dd4-c5f03280d7b0\", \"fill\": 0.5, \"label\": \"Consumers\", \"line_width\": 1, \"chart_type\": \"line\", \"seperate_axis\": 0, \"color_rules\": [{\"id\": \"ff90f2b0-d2f5-11e8-95b9-eb9260148efc\"}], \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": {\"language\": \"lucene\", \"query\": \" metricset.name: consumergroup\"}, \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"kafka.partition.offset.newest\", \"id\": \"dc393530-d2f4-11e8-9dd4-c5f03280d7b0\"}], \"point_size\": 1, \"id\": \"dc390e20-d2f4-11e8-9dd4-c5f03280d7b0\", \"fill\": 0.5, \"label\": \"Newest Offset\", \"line_width\": 1, \"chart_type\": \"line\", \"seperate_axis\": 0, \"color_rules\": [{\"id\": \"ea4984e0-d2f4-11e8-9dd4-c5f03280d7b0\"}], \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": {\"language\": \"lucene\", \"query\": \" metricset.name: partition\"}, \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"min\", \"field\": \"kafka.partition.offset.oldest\", \"id\": \"11366c81-d2f5-11e8-9dd4-c5f03280d7b0\"}], \"point_size\": 1, \"id\": \"11366c80-d2f5-11e8-9dd4-c5f03280d7b0\", \"fill\": 0.5, \"label\": \"Oldest Offset\", \"line_width\": 1, \"chart_type\": \"line\", \"seperate_axis\": 0, \"color_rules\": [{\"id\": \"043b67f0-d2f6-11e8-95b9-eb9260148efc\"}], \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": {\"language\": \"lucene\", \"query\": \" metricset.name: partition\"}, \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": {\"language\": \"lucene\", \"query\": \"NOT kafka.topic.name: __consumer_offsets\"}, \"index_pattern\": \"metricbeat-*\"}, \"title\": \"Kafka Topic Details [Metricbeat Kafka] ECS\"}"
+            },
+            "id": "491fee50-d2f5-11e8-8766-dbbdc39e7ba9-ecs",
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            },
+            "references": [],
+            "type": "visualization",
+            "updated_at": "2019-11-29T09:36:17.646Z",
+            "version": "WzI2NDcsMV0="
+        }
+    ],
+    "version": "7.4.0"
+}

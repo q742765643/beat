@@ -1,0 +1,245 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Connections [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"type\": \"timeseries\", \"bar_color_rules\": [{\"id\": \"69899960-4719-11e8-a520-3f46123ab5eb\"}], \"interval\": \"\", \"axis_position\": \"left\", \"background_color_rules\": [{\"id\": \"4e35d500-471b-11e8-a520-3f46123ab5eb\"}], \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.connection.total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"41ff3940-4719-11e8-a520-3f46123ab5eb\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"41ff3940-4719-11e8-a520-3f46123ab5eb\", \"id\": \"456a5fa0-4738-11e8-8633-8f8b3acf1566\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"stacked\": \"none\", \"chart_type\": \"line\", \"label\": \"Number of connections\", \"split_filters\": [{\"color\": \"#68BC00\", \"id\": \"0ceb7740-471a-11e8-a520-3f46123ab5eb\"}], \"split_color_mode\": \"rainbow\", \"axis_position\": \"right\", \"filter\": \"\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"series_drop_last_bucket\": 1, \"split_mode\": \"terms\", \"terms_field\": \"haproxy.stat.proxy.name\"}], \"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"gauge_color_rules\": [{\"id\": \"6f171ba0-4719-11e8-a520-3f46123ab5eb\"}], \"filter\": \"haproxy.stat.component_type:(0 OR 1)\", \"gauge_inner_width\": 10, \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\"}, \"title\": \"HAProxy connections ECS\"}"
+            },
+            "id": "a64b4fd0-471c-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-23T20:54:01.082Z",
+            "version": 3
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Active servers in backend [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"type\": \"metric\", \"bar_color_rules\": [{\"id\": \"297160c0-471d-11e8-9876-09cc6c85f5f2\"}], \"interval\": \"auto\", \"axis_position\": \"left\", \"background_color_rules\": [{\"color\": \"rgba(255,0,6,1)\", \"value\": 0, \"id\": \"1ec0dde0-471d-11e8-9876-09cc6c85f5f2\", \"operator\": \"lte\"}], \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"series\": [{\"metrics\": [{\"denominator\": \"*\", \"script\": \"params.up / (params.down + params.up)\", \"field\": \"haproxy.stat.server.id\", \"id\": \"b754d060-471e-11e8-9876-09cc6c85f5f2\", \"numerator\": \"*\", \"type\": \"cardinality\", \"variables\": [{\"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"cfd51780-471e-11e8-9d35-6baabcdce3dc\", \"name\": \"down\"}, {\"field\": \"a049c420-471e-11e8-9876-09cc6c85f5f2\", \"id\": \"45e6ec00-471f-11e8-9d35-6baabcdce3dc\", \"name\": \"up\"}], \"metric_agg\": \"count\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Active servers\", \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": \"haproxy.stat.status:UP\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\", \"terms_field\": \"haproxy.stat.proxy.name\"}, {\"metrics\": [{\"type\": \"cardinality\", \"field\": \"haproxy.stat.server.id\", \"id\": \"2cba9421-4724-11e8-b854-2f6d2b452362\"}], \"point_size\": 1, \"id\": \"2cba9420-4724-11e8-b854-2f6d2b452362\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Total servers\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"gauge_width\": 10, \"gauge_color_rules\": [{\"value\": 0, \"gauge\": \"rgba(255,0,5,1)\", \"text\": null, \"id\": \"4ce156a0-471d-11e8-9876-09cc6c85f5f2\", \"operator\": \"lte\"}, {\"value\": 0.5, \"gauge\": \"rgba(255,196,0,1)\", \"id\": \"f8458a80-4721-11e8-b854-2f6d2b452362\", \"operator\": \"lte\"}], \"filter\": \"haproxy.stat.component_type:(2 OR 3)\", \"gauge_inner_width\": 10, \"gauge_max\": \"1\", \"index_pattern\": \"metricbeat-*\", \"gauge_style\": \"half\"}, \"title\": \"HAProxy active servers in backend ECS\"}"
+            },
+            "id": "794b6cd0-471d-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-23T21:36:57.634Z",
+            "version": 8
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Connections per server [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"978f2660-4735-11e8-b619-8f82b8185e96\"}], \"interval\": \"auto\", \"axis_position\": \"left\", \"type\": \"top_n\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"haproxy.stat.connection.total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"3ea29000-4735-11e8-b619-8f82b8185e96\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Connections per server\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"haproxy.stat.service_name\"}], \"show_legend\": 1, \"drilldown_url\": \"../app/kibana#/dashboard/8cc50a50-47e0-11e8-bc13-1397384faad3-ecs?_a=(query:(language:kuery,query:'haproxy.stat.service_name:\\\"{{ key }}\\\"'))\", \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"filter\": \"haproxy.stat.component_type:(2 OR 3)\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"HAProxy connections per server ECS\"}"
+            },
+            "id": "bb0ab500-4735-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T17:12:35.298Z",
+            "version": 3
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Downtime seconds [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"background_color_rules\": [{\"id\": \"c86b8e00-4739-11e8-8953-55bbe33e1362\"}], \"type\": \"metric\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"haproxy.stat.downtime\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"91aa6a20-473a-11e8-8953-55bbe33e1362\"}, {\"type\": \"sum_bucket\", \"field\": \"91aa6a20-473a-11e8-8953-55bbe33e1362\", \"sigma\": \"\", \"id\": \"a8ce7ca0-473a-11e8-8953-55bbe33e1362\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Downtime\", \"value_template\": \"{{value}}s\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(255,0,0,1)\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"haproxy.stat.proxy.name\"}], \"show_legend\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"filter\": \"haproxy.stat.component_type:1\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"HAProxy downtime seconds ECS\"}"
+            },
+            "id": "40bed190-473b-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-23T21:29:04.708Z",
+            "version": 3
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Average time in queue [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"haproxy.stat.queue.time.avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Average time in queue\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"index_pattern\": \"metricbeat-*\", \"show_legend\": 1}, \"title\": \"HAProxy average time in queue ECS\"}"
+            },
+            "id": "b3463670-47a1-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T09:27:25.783Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Traffic volume [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.in.bytes\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"9814c420-47c4-11e8-994c-81d2daeb7c86\"}], \"point_size\": \"1\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0.5\", \"seperate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"Incoming\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(164,221,0,1)\", \"formatter\": \"bytes\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.out.bytes\", \"id\": \"c89d6340-47c4-11e8-994c-81d2daeb7c86\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"c89d6340-47c4-11e8-994c-81d2daeb7c86\", \"id\": \"c89d6341-47c4-11e8-994c-81d2daeb7c86\"}], \"point_size\": \"1\", \"id\": \"c89d1520-47c4-11e8-994c-81d2daeb7c86\", \"fill\": \"0.5\", \"seperate_axis\": 0, \"line_width\": \"1\", \"chart_type\": \"line\", \"label\": \"Outgoing\", \"override_index_pattern\": 0, \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(25,77,51,1)\", \"formatter\": \"bytes\", \"split_mode\": \"everything\"}], \"index_pattern\": \"metricbeat-*\", \"show_legend\": 1}, \"title\": \"HAProxy traffic volume ECS\"}"
+            },
+            "id": "86159190-47c5-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T14:43:27.616Z",
+            "version": 3
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "HTTP response codes [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.response.http.2xx\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"973a6de0-47bd-11e8-b7ab-dff70b15977c\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"973a6de0-47bd-11e8-b7ab-dff70b15977c\", \"id\": \"4971d580-47e5-11e8-b45e-f10c3845381c\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"200s\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.response.http.3xx\", \"id\": \"aafd05e1-47bd-11e8-b7ab-dff70b15977c\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"aafd05e1-47bd-11e8-b7ab-dff70b15977c\", \"id\": \"aafd05e2-47bd-11e8-b7ab-dff70b15977c\"}], \"point_size\": 1, \"id\": \"aafd05e0-47bd-11e8-b7ab-dff70b15977c\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"300s\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(64,240,0,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.response.http.4xx\", \"id\": \"c77191a1-47bd-11e8-b7ab-dff70b15977c\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"c77191a1-47bd-11e8-b7ab-dff70b15977c\", \"id\": \"c77191a2-47bd-11e8-b7ab-dff70b15977c\"}], \"point_size\": 1, \"id\": \"c77191a0-47bd-11e8-b7ab-dff70b15977c\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"400s\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(255,246,0,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.response.http.5xx\", \"id\": \"d574e901-47bd-11e8-b7ab-dff70b15977c\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"d574e901-47bd-11e8-b7ab-dff70b15977c\", \"id\": \"d5753720-47bd-11e8-b7ab-dff70b15977c\"}], \"point_size\": 1, \"id\": \"d574e900-47bd-11e8-b7ab-dff70b15977c\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"500s\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(255,0,4,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.response.http.other\", \"id\": \"e3b8a4c1-47bd-11e8-b7ab-dff70b15977c\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"e3b8a4c1-47bd-11e8-b7ab-dff70b15977c\", \"id\": \"e3b8a4c2-47bd-11e8-b7ab-dff70b15977c\"}], \"point_size\": 1, \"id\": \"e3b8a4c0-47bd-11e8-b7ab-dff70b15977c\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Other\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(0,251,255,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.response.errors\", \"id\": \"f9217d41-47be-11e8-b7ab-dff70b15977c\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"f9217d41-47be-11e8-b7ab-dff70b15977c\", \"id\": \"1b7d4400-47bf-11e8-b7ab-dff70b15977c\"}], \"point_size\": 1, \"id\": \"f9217d40-47be-11e8-b7ab-dff70b15977c\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Response errors\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(15,20,25,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"index_pattern\": \"metricbeat-*\", \"show_legend\": 1}, \"title\": \"HAProxy HTTP response codes ECS\"}"
+            },
+            "id": "fcbdfa60-47bd-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T17:31:30.169Z",
+            "version": 4
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Average response time [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"avg\", \"field\": \"haproxy.stat.response.time.avg\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Average response time\", \"value_template\": \"{{value}}ms\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"ms,ms,0\", \"split_mode\": \"everything\"}], \"index_pattern\": \"metricbeat-*\", \"show_legend\": 1}, \"title\": \"HAProxy average response time ECS\"}"
+            },
+            "id": "981d1040-47be-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T13:01:49.811Z",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Requests [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"max\", \"field\": \"haproxy.stat.request.total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"ad38e2c0-47d6-11e8-994c-81d2daeb7c86\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"ad38e2c0-47d6-11e8-994c-81d2daeb7c86\", \"id\": \"b1ca03a0-47d6-11e8-994c-81d2daeb7c86\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Requests\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"haproxy.stat.request.errors\", \"id\": \"c2f30501-47d6-11e8-994c-81d2daeb7c86\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"c2f30501-47d6-11e8-994c-81d2daeb7c86\", \"id\": \"c2f30502-47d6-11e8-994c-81d2daeb7c86\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"c2f30502-47d6-11e8-994c-81d2daeb7c86\", \"id\": \"c2f30503-47d6-11e8-994c-81d2daeb7c86\"}], \"point_size\": 1, \"id\": \"c2f30500-47d6-11e8-994c-81d2daeb7c86\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Request errors\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(255,0,0,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"max\", \"field\": \"haproxy.stat.request.denied\", \"id\": \"11968ce1-47d7-11e8-994c-81d2daeb7c86\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"11968ce1-47d7-11e8-994c-81d2daeb7c86\", \"id\": \"11968ce2-47d7-11e8-994c-81d2daeb7c86\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"11968ce2-47d7-11e8-994c-81d2daeb7c86\", \"id\": \"11968ce3-47d7-11e8-994c-81d2daeb7c86\"}], \"point_size\": 1, \"id\": \"11968ce0-47d7-11e8-994c-81d2daeb7c86\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Denied requests\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(0,0,0,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}], \"index_pattern\": \"metricbeat-*\", \"show_legend\": 1}, \"title\": \"HAProxy requests ECS\"}"
+            },
+            "id": "30956d00-47d7-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T15:50:19.344Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Average connection time [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"percentile\", \"field\": \"haproxy.stat.connection.time.avg\", \"percentiles\": [{\"value\": \"99\", \"percentile\": \"\", \"shade\": 0.2, \"mode\": \"line\", \"id\": \"9fa517e0-479b-11e8-9590-e34c5ed2dd95\"}, {\"value\": \"90\", \"percentile\": \"\", \"shade\": 0.2, \"mode\": \"line\", \"id\": \"daafd6e0-479b-11e8-9590-e34c5ed2dd95\"}, {\"value\": \"50\", \"percentile\": \"\", \"shade\": 0.2, \"mode\": \"line\", \"id\": \"e006b8c0-479b-11e8-9590-e34c5ed2dd95\"}], \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": \"0.1\", \"seperate_axis\": 0, \"line_width\": \"1\", \"stacked\": \"none\", \"chart_type\": \"line\", \"label\": \"Percentile\", \"split_color_mode\": \"gradient\", \"axis_position\": \"right\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"everything\", \"terms_field\": \"haproxy.stat.service_name\"}], \"index_pattern\": \"metricbeat-*\", \"show_legend\": 1}, \"title\": \"HAProxy average connection time ECS\"}"
+            },
+            "id": "0751ed00-479c-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T08:51:34.252Z",
+            "version": 4
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Number of server connections [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.connection.total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"id\": \"22668d40-47e1-11e8-96ee-d767c73d008a\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"22668d40-47e1-11e8-96ee-d767c73d008a\", \"id\": \"2a1d0a00-47e1-11e8-96ee-d767c73d008a\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Number of connections\", \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": \"haproxy.stat.component_type:(2 OR 3)\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"haproxy.stat.service_name\"}], \"index_pattern\": \"metricbeat-*\", \"show_legend\": 1}, \"title\": \"HAProxy number of server connections ECS\"}"
+            },
+            "id": "72e84b00-47e1-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T17:05:00.128Z",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Healthcheck [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"axis_formatter\": \"number\", \"interval\": \"auto\", \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"timeseries\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.downtime\", \"id\": \"198f56e1-47e4-11e8-b45e-f10c3845381c\"}, {\"type\": \"derivative\", \"unit\": \"\", \"field\": \"198f56e1-47e4-11e8-b45e-f10c3845381c\", \"sigma\": \"\", \"id\": \"dbf38560-47e6-11e8-b45e-f10c3845381c\"}, {\"type\": \"positive_only\", \"unit\": \"\", \"field\": \"dbf38560-47e6-11e8-b45e-f10c3845381c\", \"id\": \"62274b80-47e7-11e8-b45e-f10c3845381c\"}, {\"script\": \"(params.down > 0) ? 1 : 0\", \"type\": \"calculation\", \"variables\": [{\"field\": \"62274b80-47e7-11e8-b45e-f10c3845381c\", \"id\": \"7e577b40-47e7-11e8-b45e-f10c3845381c\", \"name\": \"down\"}], \"id\": \"7b7a7300-47e7-11e8-b45e-f10c3845381c\"}], \"point_size\": 1, \"id\": \"198f56e0-47e4-11e8-b45e-f10c3845381c\", \"fill\": 0.5, \"seperate_axis\": 1, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Down\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(255,0,4,1)\", \"formatter\": \"number\", \"split_mode\": \"everything\"}, {\"metrics\": [{\"type\": \"avg\", \"field\": \"haproxy.stat.check.duration\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Duration (ms)\", \"stacked\": \"none\", \"axis_position\": \"right\", \"color\": \"rgba(255,218,0,1)\", \"formatter\": \"ms,ms,0\", \"split_mode\": \"everything\"}], \"index_pattern\": \"metricbeat-*\", \"show_legend\": 1}, \"title\": \"HAProxy healthcheck ECS\"}"
+            },
+            "id": "976b0910-47e4-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T17:49:15.393Z",
+            "version": 5
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Servers per connection [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"markdown\": \"{{#each _all}}\\n{{ label }}\\n\\n{{/each}}\", \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"50830800-47d9-11e8-9db9-274c7a5e25e4\"}], \"interval\": \"auto\", \"axis_position\": \"left\", \"type\": \"top_n\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.connection.total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"terms_size\": \"20\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"line_width\": 1, \"chart_type\": \"line\", \"var_name\": \"\", \"label\": \"Servers\", \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": \"haproxy.stat.component_type:(2 OR 3)\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"haproxy.stat.service_name\"}], \"show_legend\": 1, \"drilldown_url\": \"../app/kibana#/dashboard/8cc50a50-47e0-11e8-bc13-1397384faad3-ecs?_a=(query:(language:kuery,query:'haproxy.stat.service_name:\\\"{{ key }}\\\"'))\", \"ignore_global_filter\": 0, \"axis_formatter\": \"number\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"filter\": \"\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"HAProxy servers per connection ECS\"}"
+            },
+            "id": "79350d50-47db-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T17:11:53.619Z",
+            "version": 7
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Backends per connection [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"4aeddd40-47dc-11e8-9db9-274c7a5e25e4\"}], \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"top_n\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.connection.total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"terms_size\": \"20\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Backends\", \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": \"haproxy.stat.component_type:1\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"haproxy.stat.proxy.name\"}], \"show_legend\": 1, \"drilldown_url\": \"../app/kibana#/dashboard/0836a4b0-47bd-11e8-bc13-1397384faad3-ecs?_a=(query:(language:kuery,query:'haproxy.stat.proxy.name:\\\"{{ key }}\\\"'))\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"HAProxy backends per connection ECS\"}"
+            },
+            "id": "8c8f0300-47dc-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T16:46:24.802Z",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Frontends per connection [Metricbeat HAProxy] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [], \"type\": \"metrics\", \"params\": {\"show_grid\": 1, \"time_field\": \"@timestamp\", \"bar_color_rules\": [{\"id\": \"b81d8640-47dc-11e8-9a25-99b107967d82\"}], \"interval\": \"auto\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"type\": \"top_n\", \"series\": [{\"metrics\": [{\"type\": \"sum\", \"field\": \"haproxy.stat.connection.total\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"point_size\": 1, \"terms_size\": \"20\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5, \"seperate_axis\": 0, \"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"line_width\": 1, \"chart_type\": \"line\", \"label\": \"Frontends\", \"stacked\": \"none\", \"axis_position\": \"right\", \"filter\": \"haproxy.stat.component_type:0\", \"color\": \"#68BC00\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"terms_field\": \"haproxy.stat.proxy.name\"}], \"show_legend\": 1, \"drilldown_url\": \"../app/kibana#/dashboard/e9057ae0-47c5-11e8-bc13-1397384faad3-ecs?_a=(query:(language:kuery,query:'haproxy.stat.proxy.name:\\\"{{ key }}\\\"'))\", \"axis_formatter\": \"number\", \"axis_position\": \"left\", \"index_pattern\": \"metricbeat-*\"}, \"title\": \"HAProxy frontends per connection ECS\"}"
+            },
+            "id": "f1e27ed0-47dc-11e8-bc13-1397384faad3-ecs",
+            "type": "visualization",
+            "updated_at": "2018-04-24T16:54:16.639Z",
+            "version": 3
+        }
+    ],
+    "version": "6.2.2"
+}

@@ -1,0 +1,23 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "HAProxy backend metrics",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"highlightAll\": true, \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"version\": true, \"filter\": []}"
+                },
+                "optionsJSON": "{\"hidePanelTitles\": false, \"darkTheme\": false, \"useMargins\": true}",
+                "panelsJSON": "[{\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"1\", \"y\": 0, \"x\": 0, \"w\": 6}, \"panelIndex\": \"1\", \"version\": \"6.2.2\", \"id\": \"a64b4fd0-471c-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"2\", \"y\": 0, \"x\": 6, \"w\": 3}, \"panelIndex\": \"2\", \"version\": \"6.2.2\", \"id\": \"794b6cd0-471d-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 4, \"i\": \"3\", \"y\": 2, \"x\": 6, \"w\": 6}, \"panelIndex\": \"3\", \"version\": \"6.2.2\", \"id\": \"bb0ab500-4735-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"4\", \"y\": 0, \"x\": 9, \"w\": 3}, \"panelIndex\": \"4\", \"version\": \"6.2.2\", \"id\": \"40bed190-473b-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"5\", \"y\": 2, \"x\": 0, \"w\": 6}, \"panelIndex\": \"5\", \"version\": \"6.2.2\", \"id\": \"0751ed00-479c-11e8-bc13-1397384faad3-ecs\"}, {\"type\": \"visualization\", \"gridData\": {\"h\": 2, \"i\": \"6\", \"y\": 4, \"x\": 0, \"w\": 6}, \"panelIndex\": \"6\", \"version\": \"6.2.2\", \"id\": \"b3463670-47a1-11e8-bc13-1397384faad3-ecs\"}]",
+                "timeRestore": false,
+                "title": "[Metricbeat HAProxy] Backend ECS",
+                "version": 1
+            },
+            "id": "9151c900-471d-11e8-bc13-1397384faad3-ecs",
+            "type": "dashboard",
+            "updated_at": "2018-04-24T18:31:25.838Z",
+            "version": 15
+        }
+    ],
+    "version": "6.2.2"
+}
